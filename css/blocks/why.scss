@@ -1,0 +1,98 @@
+.why {
+  .why__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .why__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #292929;
+    max-width: 493px;
+    margin-bottom: 20px;
+  }
+  .why__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+    max-width: 436px;
+    margin-bottom: 77px;
+  }
+  .qualities__title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 21px;
+  }
+  .qualities__list {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+  .qualities__text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+  }
+  .qualities__ico {
+    margin-bottom: 20px;
+    position: relative;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 50px;
+ 
+  }
+  .qualities__item > :not(:last-child) {
+
+  }
+  .qualities__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 276px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        left: 75px;
+        top: -27px;
+        background: #F2F5F4;
+        z-index: -1;
+      }
+    &:nth-child(n + 2)::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: -60px;
+      background: url(../../img/shape.svg) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    // &:nth-child(3)::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 31px;
+    //   left: -60px;
+    //   background: url(../../img/shape.svg) no-repeat;
+    //   height: 100%;
+    //   width: 100%;
+    // }
+  }
+}
