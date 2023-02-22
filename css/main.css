@@ -341,7 +341,7 @@ body {
 
 .wrapper__main {
   width: 100%;
-  max-height: 100%;
+  max-height: 72%;
   position: absolute;
   top: 0;
   left: 0;
@@ -490,7 +490,11 @@ body {
   text-decoration: none;
 }
 
-.why .why__info {
+.why {
+  margin-bottom: 114px;
+}
+
+.why__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,7 +513,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.why .why__title {
+
+.why__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -518,7 +523,8 @@ body {
   max-width: 493px;
   margin-bottom: 20px;
 }
-.why .why__subtitle {
+
+.why__subtitle {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
@@ -526,13 +532,15 @@ body {
   max-width: 436px;
   margin-bottom: 77px;
 }
-.why .qualities__title {
+
+.qualities__title {
   font-weight: 700;
   font-size: 27px;
   line-height: 32px;
   margin-bottom: 21px;
 }
-.why .qualities__list {
+
+.qualities__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,21 +558,24 @@ body {
       flex-wrap: wrap;
   gap: 56px;
 }
-.why .qualities__text {
+
+.qualities__text, .boards .featires__title, .boards .boards__text {
   font-weight: 300;
   font-size: 17px;
   line-height: 22px;
   text-align: center;
   color: #666666;
 }
-.why .qualities__ico {
+
+.qualities__ico {
   margin-bottom: 20px;
   position: relative;
   width: 68px;
   height: 68px;
   margin-bottom: 50px;
 }
-.why .qualities__item {
+
+.qualities__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +596,7 @@ body {
   position: relative;
   max-width: 276px;
 }
-.why .qualities__item::before {
+.qualities__item::before {
   content: "";
   position: absolute;
   width: 128px;
@@ -596,7 +607,7 @@ body {
   background: #F2F5F4;
   z-index: -1;
 }
-.why .qualities__item:nth-child(n+2)::after {
+.qualities__item:nth-child(n+2)::after {
   content: "";
   position: absolute;
   top: 31px;
@@ -606,10 +617,14 @@ body {
   width: 100%;
 }
 
+.boards {
+  background: #F8FAF9;
+}
 .boards .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 66px 0px 0px 0px;
 }
 .boards .boards__img {
   -webkit-box-flex: 1;
@@ -637,6 +652,21 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 374px;
 }
 .boards .boards__paramethres-modal {
   width: 91px;
@@ -661,4 +691,65 @@ body {
   font-size: 14.0121px;
   line-height: 17px;
   text-transform: uppercase;
+  margin-bottom: 52px;
+}
+.boards .boards__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 24px;
+}
+.boards .boards__text {
+  text-align: unset;
+  margin-bottom: 24px;
+}
+.boards .features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+.boards .features__item {
+  margin-right: 55px;
+}
+.boards .featires__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.boards .boards__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.boards .boards__price {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #151515;
+  margin-right: 28px;
 }
