@@ -1,65 +1,66 @@
 // ----------------info-block-------------------------//
 .info-block {
-    .container {
-      display: flex;
+  .container {
+    display: flex;
+  }
+
+  .info__body {
+    margin-bottom: 172px;
+    flex: 1 1 auto;
+  }
+
+  .info__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 493px;
+    margin-bottom: 20px;
+  }
+  .info__text {
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  .info__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .info__item {
+    display: flex;
+    align-items: center;
+    max-width: 142px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
     }
-  
-    .info__body {
-        margin-bottom: 172px;
-      flex: 1 1 auto;
-    }
-  
-    .info__title {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 58px;
-      text-transform: uppercase;
-      color: #ffffff;
-      max-width: 493px;
-      margin-bottom: 20px;
-    }
-    .info__text {
-      font-size: 21px;
-      line-height: 25px;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .info__button {
-      display: inline-flex;
-      padding: 21px 40px 21px 40px;
-      background: #fedb3f;
-      border-radius: 100px;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 18px;
-      color: #000000;
-      margin-bottom: 63px;
-      text-decoration: none;
-    }
-    .info__list {
-      display: flex;
-      align-items: center;
-    }
-    .info__item {
-      display: flex;
-      align-items: center;
-      max-width: 142px;
-  
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-    .info__about {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 18px;
-      color: #ffffff;
-    }
-    .info__ico {
-      margin-right: 15px;
-    }
-    .info__slider {
-      display: flex;
-      flex-direction: column;
-    }
+  }
+  .info__about {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .info__ico {
+    margin-right: 15px;
+  }
+  .info__slider {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.btn {
+  display: inline-flex;
+  padding: 21px 40px 21px 40px;
+  background: #fedb3f;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 63px;
+  text-decoration: none;
 }

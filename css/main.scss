@@ -6,3 +6,50 @@
 @import "./blocks/info-block.scss";
 @import "./blocks/why.scss";
 
+.boards {
+  .container {
+    display: flex;
+  }
+
+  .boards__button {
+    @extend .btn;
+  }
+  .boards__img {
+    flex: 1 1 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100px;
+      left: -100px;
+      background: url(../img/klyaksa.svg) no-repeat;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .boards__image {
+      max-width: 410px;
+      max-height: 538px;
+      transform: rotate(30deg);
+    }
+  }
+  .boards__desc {
+    flex: 1 1 50%;
+  }
+  .boards__paramethres-modal {
+    width: 91px;
+    height: 91px;
+    background: #3a587e;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14.0121px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+}
