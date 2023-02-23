@@ -1,0 +1,74 @@
+@import "./layout/normalize";
+@import "./layout/body";
+@import "./layout/wrapper";
+@import "./layout/container";
+@import "./blocks/header";
+@import "./blocks/info-block";
+@import "./blocks/why";
+@import "./blocks/boards";
+.team {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__title {
+    @extend.why__title;
+    margin-bottom: 53px;
+  }
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .team__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .team__ava {
+    max-width: 220px;
+    min-height: 290px;
+    margin-bottom: 21px;
+  }
+  .team__name {
+    font-weight: 700;
+    font-size: 21.0181px;
+    line-height: 25px;
+    color: #292929;
+  }
+  .team__about {
+    position: absolute;
+    left: 0;
+    top: 344px;
+    text-align: center;
+    transition: 0.7s;
+    opacity: 0;
+  }
+  .team__hoby {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #292929;
+  }
+  .team__work {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+  }
+  .team__name:hover + .team__about {
+    opacity: 1;
+  }
+  .team__name:hover .team__desc::after {
+    content: "123";
+  }
+}
