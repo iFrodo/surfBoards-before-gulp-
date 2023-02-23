@@ -1,11 +1,12 @@
 .team {
+  margin-bottom: 95px;
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .team__title {
-      @extend.why__title;
+      @extend .why__title;
       margin-bottom: 53px;
     }
     .team__list {
@@ -60,8 +61,7 @@
     .team__name:hover + .team__about {
       opacity: 1;
     }
-    .team__name:hover .team__desc::after {
-      content: "123";
-    }
+
+
   }
   

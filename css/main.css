@@ -514,7 +514,7 @@ body {
           align-items: center;
 }
 
-.why__title, .team .team__title {
+.why__title, .reviews__title, .team .team__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -559,7 +559,7 @@ body {
   gap: 56px;
 }
 
-.qualities__text, .boards .featires__title, .boards .boards__text {
+.qualities__text, .reviews__text, .boards .featires__title, .boards .boards__text {
   font-weight: 300;
   font-size: 17px;
   line-height: 22px;
@@ -817,6 +817,9 @@ body {
           justify-content: center;
 }
 
+.team {
+  margin-bottom: 95px;
+}
 .team .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,6 +905,101 @@ body {
 .team .team__name:hover + .team__about {
   opacity: 1;
 }
-.team .team__name:hover .team__desc::after {
-  content: "123";
+
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__title {
+  margin-bottom: 10px;
+}
+
+.reviews__img {
+  max-width: 253px;
+  min-height: 264px;
+  margin-right: 40px;
+}
+
+.reviews__text {
+  max-width: 464px;
+  margin-bottom: 46px;
+}
+
+.reviews__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  padding: 87px 0px 0px 41px;
+}
+
+.reviews__desc {
+  padding: 0px 0px 55px 0px;
+}
+
+.reviews__subtitle {
+  margin-bottom: 14px;
+  font-size: 27px;
+  line-height: 32px;
+  color: #292929;
+}
+
+.reviews__text {
+  text-align: unset;
+}
+
+.reviews__author {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #292929;
+}
+
+.reviwews__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__circle-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+
+.active {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 6px solid #fedb3f;
+}
+
+.reviews__link:not(:last-child) {
+  margin-right: 6px;
 }

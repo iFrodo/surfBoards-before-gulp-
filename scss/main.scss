@@ -7,3 +7,71 @@
 @import "./blocks/why";
 @import "./blocks/boards";
 @import "./blocks/team";
+
+.reviews__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviews__title {
+  @extend .why__title;
+  margin-bottom: 10px;
+}
+.reviews__img {
+  max-width: 253px;
+  min-height: 264px;
+  margin-right: 40px;
+}
+.reviews__text {
+  max-width: 464px;
+  margin-bottom: 46px;
+}
+.reviews__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 87px 0px 0px 41px;
+}
+.reviews__desc{
+    padding: 0px 0px 55px 0px;
+}
+.reviews__subtitle {
+  margin-bottom: 14px;
+  font-size: 27px;
+  line-height: 32px;
+  color: #292929;
+}
+.reviews__text {
+
+  @extend .qualities__text;
+  text-align: unset;
+  
+}
+.reviews__author {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #292929;
+}
+.reviwews__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews__circle-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+.active {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 6px solid #fedb3f;
+}
+.reviews__link:not(:last-child) {
+  margin-right: 6px;
+}
