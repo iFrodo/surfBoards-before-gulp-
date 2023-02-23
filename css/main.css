@@ -612,7 +612,7 @@ body {
   position: absolute;
   top: 31px;
   left: -60px;
-  background: url(../../img/shape.svg) no-repeat;
+  background: url(../img/shape.svg) no-repeat;
   height: 100%;
   width: 100%;
 }
