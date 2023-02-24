@@ -53,7 +53,6 @@
   }
 }
 .btn {
-  display: inline-flex;
   padding: 21px 40px 21px 40px;
   background: #fedb3f;
   border-radius: 100px;
@@ -62,5 +61,12 @@
   line-height: 18px;
   color: #000000;
   margin-bottom: 63px;
-  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.btn--theme-transperent{
+  background: transparent;
+  color:#fff;
+  text-transform: none;
 }
