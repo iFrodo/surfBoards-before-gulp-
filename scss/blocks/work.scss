@@ -1,0 +1,22 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+  
+    .work__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: unset;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #292929;
+    }
+  }
+  

@@ -1,19 +1,19 @@
 .btn {
-    padding: 21px 40px 21px 40px;
+    padding: 21px 40px;
     background: #fedb3f;
     border-radius: 100px;
     font-weight: 800;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
-    margin-bottom: 63px;
     cursor: pointer;
     border: 1px solid transparent;
     text-transform: uppercase;
+    &--theme-transperent{
+      background: transparent;
+      color:#fff;
+      text-transform: none;
+      padding: 21px 11px;
+    }
+    
   }
-  .btn--theme-transperent{
-    background: transparent;
-    color:#fff;
-    text-transform: none;
-  }
-  

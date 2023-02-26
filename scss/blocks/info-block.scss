@@ -1,15 +1,15 @@
 // ----------------info-block-------------------------//
-.info-block {
-  .container {
-    display: flex;
-  }
+.info {
+  align-items: stretch;
+  background: url(../../img/bacground-main.jpeg) center center / cover no-repeat;
 
-  .info__body {
-    margin-bottom: 172px;
-    flex: 1 1 auto;
-  }
-
-  .info__title {
+&__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 66px;
+}
+  &__title {
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
@@ -18,18 +18,18 @@
     max-width: 493px;
     margin-bottom: 20px;
   }
-  .info__text {
+  &__text {
     font-size: 21px;
     line-height: 25px;
     color: #ffffff;
     margin-bottom: 40px;
   }
-  .info__list {
+  &__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
-  .info__item {
+  &__item {
     display: flex;
     align-items: center;
     max-width: 142px;
@@ -38,17 +38,14 @@
       margin-right: 30px;
     }
   }
-  .info__about {
+  &__about {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
   }
-  .info__ico {
+  &__ico {
     margin-right: 15px;
   }
-  .info__slider {
-    display: flex;
-    flex-direction: column;
-  }
+
 }

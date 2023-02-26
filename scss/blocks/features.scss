@@ -1,0 +1,22 @@
+.features__list {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .features__title {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    color: #666666;
+    text-align: unset;
+  }
+  .features__item {
+    margin-right: 55px;
+  }
+  .features__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    white-space: nowrap;
+  }

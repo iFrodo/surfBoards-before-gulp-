@@ -1,0 +1,61 @@
+.boards__paramethres-modal:hover ~ .modal__inner {
+  opacity: 1;
+}
+.boards__paramethres-modal {
+  width: 91px;
+  height: 91px;
+  background: #3a587e;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14.0121px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+  cursor: pointer;
+}
+
+.modal__img {
+  margin-bottom: 7px;
+}
+.modal__inner {
+  position: absolute;
+  top: 0;
+  left: 92px;
+  background: #ececec;
+  box-shadow: 0px 0px 5px;
+  border-radius: 10px;
+  opacity: 0;
+  max-width: 305px;
+  max-height: 291px;
+  transition: 0.7s;
+}
+.modal__list {
+  padding: 10px;
+}
+.modal__item {
+  display: flex;
+  margin-bottom: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.modal__ico {
+  max-width: 32px;
+  max-height: 32px;
+  margin-right: 16px;
+}
+.modal__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: auto;
+}
+.modal__info {
+  margin-left: 30px;
+}

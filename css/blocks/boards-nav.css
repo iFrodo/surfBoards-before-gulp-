@@ -1,0 +1,16 @@
+.boards__nav {
+  position: absolute;
+  top: 54%;
+  z-index: 10;
+}
+.boards__nav--prev {
+  left: -26px;
+}
+.boards__nav--next {
+  right: -22px;
+}
+
+.boards__ico {
+  width: 24px;
+  height: 40px;
+}
