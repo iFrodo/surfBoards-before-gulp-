@@ -1026,12 +1026,12 @@ body {
 
 .form__title {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .form__input {
   width: 100%;
-  padding: 17px 50px;
+  padding: 17px 10px;
   border: solid 3px transparent;
   border-radius: 4px;
 }
