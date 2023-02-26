@@ -1,14 +1,14 @@
 // ----------------info-block-------------------------//
 .info {
   align-items: stretch;
-  background: url(../../img/bacground-main.jpeg) center center / cover no-repeat;
+  background: url(../img/bacground-main.jpeg) center center / cover no-repeat;
 
-&__container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 66px;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 66px;
+  }
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -47,5 +47,4 @@
   &__ico {
     margin-right: 15px;
   }
-
 }

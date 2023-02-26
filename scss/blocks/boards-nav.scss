@@ -1,16 +1,15 @@
 .boards__nav {
-    position: absolute;
-    top: 54%;
-    z-index: 10;
-    &--prev {
-      left: -26px;
-    }
-    &--next {
-      right: -22px;
-    }
+  position: absolute;
+  top: 54%;
+  z-index: 10;
+  &--prev {
+    left: -26px;
   }
-  .boards__ico {
-    width: 24px;
-    height: 40px;
+  &--next {
+    right: -22px;
   }
-  
+}
+.boards__ico {
+  width: 24px;
+  height: 40px;
+}
