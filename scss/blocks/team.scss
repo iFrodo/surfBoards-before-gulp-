@@ -6,12 +6,12 @@
   }
   .team__title {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 3rem;
+    line-height: 3.625rem;
     text-transform: uppercase;
     color: #292929;
-    max-width: 493px;
-    margin-bottom: 53px;
+    max-width: 30.8125rem;
+    margin-bottom: 3.3125rem;
   }
   .team__list {
     display: flex;
@@ -25,16 +25,16 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    max-width: 220px;
+    max-width: 13.75rem;
     position: relative;
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
   }
   .team__ava-box {
-    width: 220px;
-    height: 290px;
-    margin-bottom: 21px;
+    width: 13.75rem;
+    height: 18.125rem;
+    margin-bottom: 1.3125rem;
   }
   .team__ava {
     width: 100%;
@@ -42,28 +42,28 @@
   }
   .team__name {
     font-weight: 700;
-    font-size: 21.0181px;
-    line-height: 25px;
+    font-size: 1.3125rem;
+    line-height: 1.5625rem;
     color: #292929;
   }
   .team__about {
     position: absolute;
     left: 0;
-    top: 344px;
+    top: 21.5rem;
     text-align: center;
     transition: 0.7s;
     opacity: 0;
   }
   .team__hoby {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     color: #292929;
   }
   .team__work {
     font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     color: #666666;
   }
   .team__name:hover + .team__about {
