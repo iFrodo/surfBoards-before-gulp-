@@ -23,18 +23,18 @@
   }
 }
 .form-section__container {
-  padding: 62px 0px 85px 0px;
+  padding: 3.875rem 0px 5.3125rem 0px;
 }
 .form-section__title {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 3rem;
+  line-height: 3.625rem;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 58px;
+  margin-bottom: 3.625rem;
 }
 
 .form {
@@ -45,52 +45,52 @@
 }
 .form__col {
   flex: 1;
-  margin-right: 25px;
+  margin-right: 1.5625rem;
   &:last-child {
     margin-right: 0;
   }
 }
 .form__row {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 }
 .form__row--textarea {
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 .form__block {
   flex: 1;
-  margin-right: 14px;
+  margin-right: 0.875rem;
   &:last-child {
     margin-right: 0;
   }
 }
 .form__title {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
 }
 .form__input {
   width: 100%;
-  padding: 17px 10px;
-  border: solid 3px transparent;
-  border-radius: 4px;
+  padding: 1.0625rem 0.625rem;
+  border: solid 0.1875rem transparent;
+  border-radius: 0.25rem;
   &:focus {
     border-color: #fedb3f;
     outline: none;
   }
   &--textarea {
-    height: 152px;
+    height: 9.5rem;
     resize: none;
     display: block;
   }
 }
 .form__controls {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 .form__controls--margin-bottom {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
