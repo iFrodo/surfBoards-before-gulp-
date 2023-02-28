@@ -1,9 +1,3 @@
-.boards__paramethres-modal:hover ~ .modal__inner {
-  display: block;
-  }
-  .modal__inner:hover{
-    display: block;
-  }
 .boards__paramethres-modal {
   width: 5.6875rem;
   height: 5.6875rem;
@@ -36,7 +30,12 @@
   max-height: 18.1875rem;
   display: none;
   opacity: 0;
-
+}
+.boards__paramethres-modal:hover ~ .modal__inner {
+  display: block;
+}
+.modal__inner:hover {
+  display: block;
 }
 .modal__list {
   padding: 0.625rem;
