@@ -17,6 +17,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
   .team__item {
     display: flex;
@@ -27,9 +29,10 @@
     align-items: center;
     max-width: 13.75rem;
     position: relative;
-    &:not(:last-child) {
-      margin-right: 1.25rem;
-    }
+
+    // &:not(:last-child) {
+    //   margin-right: 1.25rem;
+    // }
   }
   .team__ava-box {
     width: 13.75rem;
@@ -47,9 +50,9 @@
     color: #292929;
   }
   .team__about {
-    position: absolute;
-    left: 0;
-    top: 21.5rem;
+    // position: absolute;
+    // left: 0;
+    // top: 21.5rem;
     text-align: center;
     transition: 0.7s;
     opacity: 0;
