@@ -16,18 +16,62 @@
 @import "./blocks/boards-nav";
 @import "./blocks/work";
 
-@media (max-width: 992px){
-    html{
-        font-size: 14px;
-    }
+@media (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  .header,
+  .info__body,
+  .info__desc {
+    padding: 1.5625rem 1rem 0px 1rem;
+  }
 }
-@media (max-width:  768px){
-    html{
-        font-size: 12px;
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  .qualities__item:nth-child(n + 2)::after {
+    display: none;
+  }
+  .header,
+  .info__body,
+  .info__desc {
+    padding: 1.5625rem 1rem 0px 1rem;
+  }
+  .boards__desc {
+    padding: 6rem 0rem 0rem 3rem;
+    align-items: center;
+  }
+  .boards .container {
+    flex-wrap: wrap;
+    font-size: 5px;
+    justify-content: center;
+  }
+  .reviews__body {
+    padding: 2.625rem 4.875rem 2.625rem 2.625rem;
+  }
+  .team .team__list {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .form {
+    font-size: 8px;
+    padding: 0rem 1rem 0rem 1rem;
+  }
 }
-@media (max-width: 480px){
-    html{
-        font-size: 10px;
-    }
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .header,
+  .info__body,
+  .info__desc {
+    padding: 1.5625rem 1rem 0px 1rem;
+  }
+  .form {
+    font-size: 7px;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .reviews__body {
+    padding: 2.625rem 1.875rem 2.625rem 2.625rem;
+  }
 }
