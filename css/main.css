@@ -1127,14 +1127,6 @@ body {
   padding: 1.3125rem 0.6875rem;
 }
 
-.boards__paramethres-modal:hover ~ .modal__inner {
-  display: block;
-}
-
-.modal__inner:hover {
-  display: block;
-}
-
 .boards__paramethres-modal {
   width: 5.6875rem;
   height: 5.6875rem;
@@ -1178,6 +1170,14 @@ body {
   max-height: 18.1875rem;
   display: none;
   opacity: 0;
+}
+
+.boards__paramethres-modal:hover ~ .modal__inner {
+  display: block;
+}
+
+.modal__inner:hover {
+  display: block;
 }
 
 .modal__list {
