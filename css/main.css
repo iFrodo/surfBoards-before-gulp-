@@ -955,7 +955,7 @@ body {
 }
 
 .form-section__container {
-  padding: 3.875rem 0px 5.3125rem 0px;
+  padding: 3.875rem 1rem 5.3125rem 1rem;
 }
 
 .form-section__title {
@@ -1300,8 +1300,11 @@ body {
   height: 1rem;
 }
 
+.footer {
+  position: relative;
+}
+
 .footer__container {
-  padding: 3rem 0rem 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,8 +1312,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
@@ -1319,6 +1320,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .socials__list {
@@ -1341,8 +1349,11 @@ body {
           align-items: center;
 }
 
+.socials__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .navigation {
-  position: relative;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -1350,17 +1361,60 @@ body {
 }
 
 .map {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: url(../img/map.png) center center/cover no-repeat;
 }
 
+.header__burger {
+  display: none;
+  position: relative;
+  width: 1.625rem;
+  height: 1.5rem;
+}
+
+.header__burger::after,
+.header__burger::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.270625rem;
+  left: 0;
+  background-color: #fff;
+  border-radius: 0.270625rem;
+}
+
+.header__burger span {
+  position: absolute;
+  width: 100%;
+  height: 0.270625rem;
+  left: 0;
+  top: 0.62rem;
+  background-color: #fff;
+  border-radius: 0.270625rem;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  .header,
+.info__body,
+.info__desc {
+    padding: 1.5625rem 1rem 0px 1rem;
+  }
+}
 @media (max-width: 768px) {
   html {
-    font-size: 500px;
+    font-size: 15px;
   }
   .qualities__item:nth-child(n+2)::after {
     display: none;
@@ -1369,6 +1423,49 @@ body {
 .info__body,
 .info__desc {
     padding: 1.5625rem 1rem 0px 1rem;
+    z-index: 1;
+  }
+  .header__menu,
+.menu__contacts {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .info {
+    position: relative;
+    background: url(../img/bacground-main.jpeg) center right/cover no-repeat;
+  }
+  .info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.6875rem;
+    background-color: #1968b1;
+  }
+  .info__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info__title {
+    text-align: center;
+    max-width: none;
+  }
+  .info__desc {
+    visibility: hidden;
+  }
+  .info__container {
+    padding-bottom: 0;
   }
   .boards__container {
     -webkit-box-orient: vertical;
@@ -1430,6 +1527,13 @@ body {
   }
   .team .team__list {
     padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team__ava-box {
+    display: none;
   }
   .form {
     font-size: 15px;
@@ -1437,7 +1541,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 0rem 1rem 0rem 1rem;
   }
   .form__col {
     margin-right: 0;
@@ -1447,28 +1551,30 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-@media (max-width: 992px) {
-  html {
-    font-size: 16px;
-  }
-  .header,
-.info__body,
-.info__desc {
-    padding: 1.5625rem 1rem 0px 1rem;
+  .form__row--textarea {
+    padding-top: 0.5rem;
+    margin-bottom: 1.375rem;
   }
 }
 @media (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
   .header,
 .info__body,
 .info__desc {
     padding: 1.5625rem 1rem 0px 1rem;
   }
+  .info {
+    margin-bottom: 2rem;
+  }
+  .qualities__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .form {
-    font-size: 7px;
     padding: 0rem 1rem 0rem 1rem;
   }
   .reviews__body {
