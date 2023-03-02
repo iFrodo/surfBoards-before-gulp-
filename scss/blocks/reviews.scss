@@ -1,3 +1,25 @@
+.reviews .reviews__body {
+    @include tablets{
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 0 2rem;
+  }
+  }
+  .reviews__avatar {
+    @include tablets{
+    margin-right: 0;
+    }
+  }
+  .reviews__desc {
+    @include tablets{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+  }
+
+
+//----------reviews-----------//
 .reviews__header {
   display: flex;
   flex-direction: row;

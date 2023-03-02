@@ -1,0 +1,35 @@
+.header__burger {
+  display: none;
+  position: relative;
+  width: 1.625rem;
+  height: 1.5rem;
+}
+
+.header__burger::after,
+.header__burger::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.270625rem;
+  left: 0;
+  background-color: #fff;
+  border-radius: 0.270625rem;
+}
+
+.header__burger span {
+  position: absolute;
+  width: 100%;
+  height: 0.270625rem;
+  left: 0;
+  top: 0.62rem;
+  background-color: #fff;
+  border-radius: 0.270625rem;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.header__burger::before {
+  top: 0;
+}
