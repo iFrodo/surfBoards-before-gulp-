@@ -1,3 +1,17 @@
+  .team .team__list {
+    @include tablets{
+    padding: 0rem 1rem 0rem 1rem;
+    flex-direction: column;
+  }
+  }
+  .team__ava-box {
+    @include tablets{
+    display: none;
+    }
+  }
+
+
+//------------team-----------//
 .team {
   .container {
     display: flex;

@@ -1,9 +1,24 @@
+.header__menu{
+  @include tablets{
+    display: none;
+  }
+}
+
+.menu__contacts--header{
+  @include tablets{
+    display: none;
+  }
+}
+.info .header__burger {
+    display: block;
+  }
 // ----------------header-------------------------//
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5625rem 0px 0px 0px;
+  z-index: 1;
 }
 .logo {
   margin-right: 2.875rem;

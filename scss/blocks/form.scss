@@ -1,3 +1,31 @@
+  .form {
+    @include tablets{
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
+    & &__col {
+      margin-right: 0;
+    }
+    & &__row {
+      justify-content: center;
+    }
+    & &__row--textarea {
+      padding-top: 0.5rem;
+      margin-bottom: 1.375rem;
+    }
+  }
+  }
+  .container {
+    @include phones{
+     width: 100%;;
+    }
+  }
+  .form-section .form-section__container {
+    @include phones{
+     padding: 0;
+    }
+  }
+
+//----------------form----------//
 .form-section {
   position: relative;
 

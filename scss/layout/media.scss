@@ -1,153 +1,53 @@
+//funtcion px to rem
+// @function rem($px) {
+//   @return $px / 16 +0rem;
+// }
+//regular expression
+//(?!rem\()-?\d+px(?!\))
+//funtcion px to rem
 
-@media (max-width: 768px) {
-  html {
+@mixin tablets {
+  @media (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin phones {
+  @media (max-width: $phones) {
+    @content;
+  }
+}
+html {
+  font-size: 16px;
+  @include tablets {
     font-size: 15px;
   }
-  .qualities__item:nth-child(n + 2)::after {
-    display: none;
-  }
-  .header,
-  .info__body,
-  .info__desc {
-    padding: 1.5625rem 1rem 0px 1rem;
-    z-index: 1;
-  }
-  .header__menu,
-  .menu__contacts {
-    display: none;
-  }
-  .header__burger {
-    display: block;
-  }
-  .info {
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 5.6875rem;
-      background-color: #1968b1;
-    }
-    &__body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__title {
-      text-align: center;
-      max-width: none;
-    }
-
-    &__desc {
-      visibility: hidden;
-    }
-    &__container {
-      padding-bottom: 0;
-    }
-  }
-
-  .boards__container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .boards__desc {
-    align-items: center;
-  }
-
-  .boards .boards__img::after {
-    height: 33rem;
-    width: 33rem;
-    left: -2.5625rem;
-  }
-  .boards .boards__text {
-    padding: 0rem 4.5rem 0rem 4.5rem;
-    text-align: center;
-  }
-  .boards__nav {
-    top: 39%;
-    &--prev {
-      left: 4.375rem;
-    }
-    &--next {
-      right: 5.625rem;
-    }
-  }
-
-  .modal {
-    display: none;
-  }
-
-  .reviews__body {
-    align-items: center;
-    flex-direction: column;
-    padding: 0 1rem 0 1rem;
-  }
-  .reviews__avatar {
-    margin-right: 0;
-  }
-  .reviews__desc {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .team .team__list {
-    padding: 0rem 1rem 0rem 1rem;
-    flex-direction: column;
-  }
-  .team__ava-box {
-    display: none;
-  }
-
-  .form {
-    font-size: 15px;
-    flex-direction: column;
-    padding: 0rem 1rem 0rem 1rem;
-    &__col {
-      margin-right: 0;
-    }
-    &__row {
-      justify-content: center;
-    }
-    &__row--textarea {
-      padding-top: 0.5rem;
-      margin-bottom: 1.375rem;
-    }
+  @include phones {
+    font-size: 13px;
   }
 }
 
-@media (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-  .header,
-  .info__body,
-  .info__desc {
-    padding: 1.5625rem 1rem 0px 1rem;
-  }
-  .info {
-    margin-bottom: 10rem;
-    &__title{
-      font-size: 2.5rem;
-      line-height: 2.25rem;
-    }
-  }
-  .why{
-    margin-bottom: 10rem;
-    &__title{
-      white-space: nowrap;
-      font-size: 2.5rem;
-    }
-  }
-  .qualities__list {
-    flex-direction: column;
-  }
-  .form {
-    padding: 0rem 1rem 0rem 1rem;
-  }
-  .reviews__body {
-    padding: 2.625rem 1.875rem 2.625rem 2.625rem;
-  }
-}
+// @media (max-width: 768px) {
+
+// @media (max-width: 480px) {
+
+//   .header,
+//   .info__body,
+//   .info__desc {
+//     padding: 1.5625rem 1rem 0px 1rem;
+//   }
+//   .info {
+//     margin-bottom: 10rem;
+//     &__title {
+//       font-size: 2.5rem;
+//       line-height: 2.25rem;
+//     }
+//   }
+//
+
+//   .form {
+//     padding: 0rem 1rem 0rem 1rem;
+//   }
+//   .reviews__body {
+//     padding: 2.625rem 1.875rem 2.625rem 2.625rem;
+//   }
+// }
