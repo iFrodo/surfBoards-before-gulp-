@@ -1405,16 +1405,6 @@ body {
   top: 0;
 }
 
-@media (max-width: 992px) {
-  html {
-    font-size: 16px;
-  }
-  .header,
-.info__body,
-.info__desc {
-    padding: 1.5625rem 1rem 0px 1rem;
-  }
-}
 @media (max-width: 768px) {
   html {
     font-size: 15px;
@@ -1437,7 +1427,6 @@ body {
   }
   .info {
     position: relative;
-    background: url(../img/bacground-main.jpeg) center right/cover no-repeat;
   }
   .info::after {
     content: "";
@@ -1569,11 +1558,18 @@ body {
     padding: 1.5625rem 1rem 0px 1rem;
   }
   .info {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
   }
   .info__title {
     font-size: 2.5rem;
     line-height: 2.25rem;
+  }
+  .why {
+    margin-bottom: 10rem;
+  }
+  .why__title {
+    white-space: nowrap;
+    font-size: 2.5rem;
   }
   .qualities__list {
     -webkit-box-orient: vertical;
