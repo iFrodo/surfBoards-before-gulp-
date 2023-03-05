@@ -1,4 +1,8 @@
 .socials__ico{
     width: 1.5rem;
     height: 1.5rem;
+    fill:#B3B3B3;
+    &:hover{
+        fill:black
+    }
 }

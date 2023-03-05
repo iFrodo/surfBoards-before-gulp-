@@ -1406,6 +1406,9 @@ body {
   text-transform: none;
   padding: 1.3125rem 0.6875rem;
 }
+.btn:hover, .boards .boards__button:hover {
+  background: rgba(255, 212, 23, 0.6588235294);
+}
 
 .boards__paramethres-modal {
   width: 5.6875rem;
@@ -1716,4 +1719,8 @@ body {
 .socials__ico {
   width: 1.5rem;
   height: 1.5rem;
+  fill: #B3B3B3;
+}
+.socials__ico:hover {
+  fill: black;
 }
