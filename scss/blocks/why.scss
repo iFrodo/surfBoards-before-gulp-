@@ -10,40 +10,37 @@
       white-space: nowrap;
       font-size: 2.5rem;
     }
+    .qualities__item {
+      flex-direction: row;
+      margin-bottom: 0;
+      flex-wrap: nowrap;
+      max-width: none;
+      align-items: flex-start;
+ 
+    }
+    .qualities__list {
+      flex-direction: column;
+    }
+    .qualities__ico{
+      width: 10rem;
+      height: 5rem;
+    }
+    .qualities__ico-box{
+      margin-right: 12px;
+    }
+    .qualities__text{
+      text-align:unset;
+    }
+    .qualities__desc{
+      align-items: flex-start;
+    }
   }
 }
-  .why__qualities .qualities__list {
-    @include phones {
-    flex-direction: column;
-   
-  }
-  .why__qualities .qualities__item {
 
-    flex-direction: row;
-    margin-bottom: 0;
-    flex-wrap: nowrap;
-    max-width: none;
-  }
 
-  .why__qualities .qualities__ico-box {
 
-    margin-right: 1rem;
-    margin-bottom: 0;
-  }
 
-  .why__qualities .qualities__desc {
 
-    display: flex;
-    flex-direction: column;
-    max-width: 18rem;
-    align-items: flex-start;
-  }
-
-  .why__qualities .qualities__text {
-
-    text-align: unset;
-  }
-}
 
 //-------------why block---------------//
 .why__info {

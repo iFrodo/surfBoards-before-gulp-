@@ -1,3 +1,19 @@
+.footer .footer__container {
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .contacts__adress,
+  .contacts__link {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+//--------------footer-------//
 .contacts__link--theme-dark {
   color: #111;
 }
