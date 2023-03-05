@@ -17,7 +17,10 @@
         <section class="info section">
             <div class="container info__container">
                 <header class="header">
-                    <a href="#" class="logo"><img src="./img/logo.svg" alt="SurfBoard" class="logo_svg"></a>
+                    <a href="#" class="logo">
+                        <svg class="logo">
+                            <use xlink:href="./img/sprite.svg#logo"></use>
+                        </svg></a>
                     <nav class="header__menu menu">
                         <ul class="menu__list">
                             <li class="menu__item">
@@ -44,11 +47,14 @@
                         </ul>
                     </nav>
                     <div class="menu__contacts contacts menu__contacts--header">
-                        <a href="tel:88009039090" class="contacts__link"><img src="./img/phone.svg"
-                                class='contacts__ico' alt="">8 800 903 90 90</a>
+                        <a href="tel:88009039090" class="contacts__link">
+                            <svg fill='white' class="contacts__ico">
+                                <use xlink:href="./img/sprite.svg#phone"></use>
+                            </svg>8 800 903 90 90</a>
                     </div>
+                    <a href="" class="header__burger-link">
                     <div class="header__burger"><span></span></div>
-
+                </a>
 
                 </header>
 
@@ -61,16 +67,22 @@
                 <div class="info__desc">
                     <ul class="info__list">
                         <li class="info__item">
-                            <img src="./img/design.svg" alt="" class="info__ico">
+                            <svg class="info__ico">
+                                <use xlink:href="./img/sprite.svg#design"></use>
+                            </svg>
                             <div class="info__about">Уникальный дизайн</div>
                         </li>
                         <li class="info__item">
-                            <img src="./img/materials.svg" alt="" class="info__ico">
+                            <svg class="info__ico">
+                                <use xlink:href="./img/sprite.svg#materials"></use>
+                            </svg>
                             <div class="info__about">Прочные
                                 материалы</div>
                         </li>
                         <li class="info__item">
-                            <img src="./img/express.svg" alt="" class="info__ico">
+                            <svg class="info__ico">
+                                <use xlink:href="./img/sprite.svg#express"></use>
+                            </svg>
                             <div class="info__about">Быстрая
                                 доставка</div>
                         </li>
@@ -92,7 +104,9 @@
                         <ul class="qualities__list">
                             <li class="qualities__item">
                                 <div class="qualities__ico-box">
-                                    <img src="./img/Fit.svg" alt="qualities" class="qualities__ico">
+                                    <svg class="qualities__ico">
+                                        <use xlink:href="./img/sprite.svg#Fit"></use>
+                                    </svg>
                                 </div>
                                 <div class="qualities__desc">
                                     <h3 class="qualities__title">Perfect Fit</h3>
@@ -103,7 +117,9 @@
                             </li>
                             <li class="qualities__item">
                                 <div class="qualities__ico-box">
-                                    <img src="./img/Strong.svg" alt="qualities" class="qualities__ico">
+                                    <svg class="qualities__ico">
+                                        <use xlink:href="./img/sprite.svg#Strong"></use>
+                                    </svg>
                                 </div>
                                 <div class="qualities__desc">
                                     <h3 class="qualities__title">Strong</h3>
@@ -114,7 +130,9 @@
                             </li>
                             <li class="qualities__item">
                                 <div class="qualities__ico-box">
-                                    <img src="./img/Unique.svg" alt="qualities" class="qualities__ico">
+                                    <svg class="qualities__ico">
+                                        <use xlink:href="./img/sprite.svg#Unique"></use>
+                                    </svg>
                                 </div>
                                 <div class="qualities__desc">
                                     <h3 class="qualities__title">Unique</h3>
@@ -130,39 +148,53 @@
         </section>
         <section class="boards section">
             <div class="container boards__container ">
-                <a class="boards__nav boards__nav--prev"><img src="./img/left.svg" alt="" class="boards__ico"></a>
+                <a class="boards__nav boards__nav--prev"><svg class="boards__ico">
+                        <use xlink:href="./img/sprite.svg#left"></use>
+                    </svg> </a>
                 <div class="boards__img"><img src="./img/board.png" alt="SurfBoard" class="boards__image"></div>
                 <div class="boards__desc">
                     <div class="modal">
                         <div class="boards__paramethres-modal ">
-                            <img class="modal__img" src="./img/arrows.svg"></img>
+                            <svg class="modal__img">
+                                <use xlink:href="./img/sprite.svg#arrows"></use>
+                            </svg>
                             <div class="modal__btn-text">параметры</div>
 
                         </div>
                         <div class="modal__inner">
                             <ul class="modal__list">
                                 <li class="modal__item">
-                                    <img src="./img/modal1.svg" alt="width" class="modal__ico">
+                                    <svg class="modal__ico">
+                                        <use xlink:href="./img/sprite.svg#modal1"></use>
+                                    </svg>
                                     <div class="modal__text">Длина доски</div>
                                     <div class="modal__info">от 2,5 м</div>
                                 </li>
                                 <li class="modal__item">
-                                    <img src="./img/modal2.svg" alt="width" class="modal__ico">
+                                    <svg class="modal__ico">
+                                        <use xlink:href="./img/sprite.svg#modal2"></use>
+                                    </svg>
                                     <div class="modal__text">Ширина доски</div>
                                     <div class="modal__info">от 40 см</div>
                                 </li>
                                 <li class="modal__item">
-                                    <img src="./img/modal3.svg" alt="width" class="modal__ico">
+                                    <svg class="modal__ico">
+                                        <use xlink:href="./img/sprite.svg#modal3"></use>
+                                    </svg>
                                     <div class="modal__text">Толщина</div>
                                     <div class="modal__info">8 см</div>
                                 </li>
                                 <li class="modal__item">
-                                    <img src="./img/modal4.svg" alt="width" class="modal__ico">
+                                    <svg class="modal__ico">
+                                        <use xlink:href="./img/sprite.svg#modal4"></use>
+                                    </svg>
                                     <div class="modal__text">Срок службы</div>
                                     <div class="modal__info">5 лет</div>
                                 </li>
                                 <li class="modal__item">
-                                    <img src="./img/modal5.svg" alt="width" class="modal__ico">
+                                    <svg class="modal__ico">
+                                        <use xlink:href="./img/sprite.svg#modal5"></use>
+                                    </svg>
                                     <div class="modal__text">Вес</div>
                                     <div class="modal__info">7-8 кг</div>
                                 </li>
@@ -193,7 +225,9 @@
                         <button type="submit" value="Заказать" class="boards__button btn">Заказать</button>
                     </div>
                 </div>
-                <a class="boards__nav boards__nav--next"><img src="./img/right.svg" alt="" class="boards__ico"></a>
+                <a class="boards__nav boards__nav--next"><svg class="boards__ico">
+                        <use xlink:href="./img/sprite.svg#right"></use>
+                    </svg></a>
             </div>
         </section>
         <section class="team section">
@@ -381,29 +415,38 @@
             <div class=" footer__container">
                 <div class="menu__contacts contacts">
                     <div class="contacts__adress">Москва, ул.Новый Арбат, д.31/12</div>
-                    <a href="tel:88009039090" class="contacts__link contacts__link--theme-dark"><img
-                            src="./img/phone-black.svg" class='contacts__ico' alt="">8 800 903 90 90</a>
+                    <a href="tel:88009039090" class="contacts__link contacts__link--theme-dark"><svg fill='black' class="contacts__ico">
+                        <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>8 800 903 90 90</a>
                 </div>
                 <div class="socials ">
                     <ul class="socials__list">
                         <li class="socials__item">
                             <a class="socials__link socials__link--vk" href="#">
-                                <img class="socials__icon " src="./img/socials/vk.svg">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./img/sprite.svg#vk"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link socials__link--fb" href="#">
-                                <img class="socials__icon" src="./img/socials/f.svg">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./img/sprite.svg#f"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link socials__link--i" href="#">
-                                <img class="socials__icon" src="./img/socials/in.svg">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./img/sprite.svg#in"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link socials__link--tw" href="#">
-                                <img class="socials__icon " src="./img/socials/tv.svg">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./img/sprite.svg#tv"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
