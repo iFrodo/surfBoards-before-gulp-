@@ -18,6 +18,8 @@
 
 .modal__img {
   margin-bottom: 0.4375rem;
+  width: 2.375rem;
+  height: 2.375rem;
 }
 .modal__inner {
   position: absolute;
@@ -29,12 +31,17 @@
   max-width: 19.0625rem;
   max-height: 18.1875rem;
   display: none;
-  opacity: 0;
+
+
+  
 }
 .boards__paramethres-modal:hover ~ .modal__inner {
+  opacity: 1;
+  transition: 1s;
   display: block;
 }
 .modal__inner:hover {
+
   display: block;
 }
 .modal__list {

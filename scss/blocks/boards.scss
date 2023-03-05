@@ -8,29 +8,29 @@
     //   left: -2.5625rem;
     // }
   }
-  }
-  .boards .boards__nav {
-    @include tablets {
-      top: 39%;
-      &--prev {
-        left: 4.375rem;
-      }
-      &--next {
-        right: 5.625rem;
-      }
+}
+.boards .boards__nav {
+  @include tablets {
+    top: 39%;
+    &--prev {
+      left: 4.375rem;
+    }
+    &--next {
+      right: 5.625rem;
     }
   }
-  .boards .boards__nav {
-    @include phones {
-      top: 39%;
-      &--prev {
-        left: 0;
-      }
-      &--next {
-        right: 0;
-      }
+}
+.boards .boards__nav {
+  @include phones {
+    top: 39%;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
     }
   }
+}
 
 .boards .boards__desc {
   @include tablets {

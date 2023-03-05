@@ -5,36 +5,46 @@
 }
 
 .why {
-  @include phones{
-
-      &__title {
-        white-space: nowrap;
-        font-size: 2.5rem;
-      }
-    }
-    .why__qualities .qualities__list {
-      flex-direction: column;
-    }
-    .why__qualities .qualities__item {
-      flex-direction: row;
-      margin-bottom: 0;
-      flex-wrap: nowrap;
-      max-width: none;
-    }
-    .why__qualities .qualities__ico-box {
-      margin-right: 1rem;
-      margin-bottom: 0;
-    }
-    .why__qualities .qualities__desc {
-      display: flex;
-      flex-direction: column;
-      max-width: 18rem;
-      align-items: flex-start;
-    }
-    .why__qualities .qualities__text {
-      text-align: unset;
+  @include phones {
+    .why__title {
+      white-space: nowrap;
+      font-size: 2.5rem;
     }
   }
+}
+  .why__qualities .qualities__list {
+    @include phones {
+    flex-direction: column;
+   
+  }
+  .why__qualities .qualities__item {
+
+    flex-direction: row;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    max-width: none;
+  }
+
+  .why__qualities .qualities__ico-box {
+
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .why__qualities .qualities__desc {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+    align-items: flex-start;
+  }
+
+  .why__qualities .qualities__text {
+
+    text-align: unset;
+  }
+}
+
 //-------------why block---------------//
 .why__info {
   display: flex;
@@ -104,7 +114,7 @@
   align-items: center;
   position: relative;
   max-width: 17.25rem;
-  &:nth-child(n + 2)::after  {
+  &:nth-child(n + 2)::after {
     content: "";
     position: absolute;
     top: 3.625rem;
