@@ -1,83 +1,95 @@
+// ----------------info-block-------------------------//
 .info {
+  align-items: stretch;
+  position: relative;
+  background: url(../img/bacground-main.jpeg) center center / cover no-repeat;
+  color: #ffffff;
   @include tablets {
-    position: relative;
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 5.6875rem;
+      height: rem(91px);
       background-color: #1968b1;
     }
-    &__body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__desc {
-      visibility: hidden;
-    }
-    & &__title {
-      text-align: center;
-      max-width: none;
-      @include phones {
-        font-size: 2.5rem;
-      }
-    }
-    .info__container {
-      padding-bottom: 0;
-    }
   }
-}
 
-// ----------------info-block-------------------------//
-.info {
-  align-items: stretch;
-  background: url(../img/bacground-main.jpeg) center center / cover no-repeat;
-
-  &__container {
+  .info__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 6.3125rem;
+    @include tablets {
+      padding-bottom: 0;
+    }
   }
-  &__title {
+  .info__title {
     font-weight: 700;
     font-size: 3rem;
     line-height: 3.625rem;
     text-transform: uppercase;
-    color: #ffffff;
     max-width: 30.8125rem;
     margin-bottom: 1.25rem;
+    @include tablets {
+      text-align: center;
+      max-width: none;
+      margin-bottom: rem(9px);
+    }
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+      margin-bottom: rem(12px);
+    }
   }
-  &__text {
+  .info__text {
     font-size: 1.3125rem;
     line-height: 1.5625rem;
-    color: #ffffff;
     margin-bottom: 2.5rem;
+    @include tablets {
+      margin-bottom: rem(44px);
+    }
+    @include phones {
+      font-size: rem(18px);
+      line-height: rem(20px);
+      margin-bottom: rem(44px);
+    }
   }
-  &__list {
+  .info__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
-  &__item {
+  .info__item {
     display: flex;
     align-items: center;
+    margin-right: rem(33px);
 
-    &:not(:last-child) {
+    .info:not(:last-child) {
       margin-right: 1.875rem;
     }
   }
-  &__about {
+  .info__about {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.125rem;
-    color: #ffffff;
+    max-width: rem(90px);
   }
-  &__ico {
+  .info__ico {
     margin-right: 0.9375rem;
-    max-width: 2.875rem;
+    width: rem(35px);
+    height: rem(35px);
+  }
+  .info__body {
+    @include tablets {
+      padding-top: rem(251px);
+      text-align: center;
+    }
+  }
+  .info__desc {
+    @include tablets {
+      visibility: hidden;
+    }
   }
 }
