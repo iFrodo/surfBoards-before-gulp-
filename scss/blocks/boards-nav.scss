@@ -10,16 +10,16 @@
 
 .boards .boards__nav {
   @include tablets {
-    top: 32%;
+    top: 32.3%;
     &--prev {
-      left: 7.775rem;
+      left: 7.075rem;
     }
     &--next {
-      right: 8.725rem;
+      right: 7.825rem;
     }
   }
   @include phones {
-    top: 39%;
+    top: 32%;
     &--prev {
       left: 0;
     }

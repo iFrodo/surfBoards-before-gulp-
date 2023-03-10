@@ -83,7 +83,7 @@
   }
   .info__body {
     @include tablets {
-      padding-top: rem(251px);
+      padding-top: rem(185px);
       text-align: center;
     }
     @include phones {

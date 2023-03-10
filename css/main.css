@@ -534,7 +534,7 @@ a {
 }
 @media (max-width: 768px) {
   .info .info__body {
-    padding-top: 15.6875rem;
+    padding-top: 11.5625rem;
     text-align: center;
   }
 }
@@ -609,7 +609,7 @@ a {
 }
 @media (max-width: 768px) {
   .qualities__title {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.3125rem;
   }
 }
 
@@ -1624,18 +1624,18 @@ a {
 
 @media (max-width: 768px) {
   .boards .boards__nav {
-    top: 32%;
+    top: 32.3%;
   }
   .boards .boards__nav--prev {
-    left: 7.775rem;
+    left: 7.075rem;
   }
   .boards .boards__nav--next {
-    right: 8.725rem;
+    right: 7.825rem;
   }
 }
 @media (max-width: 480px) {
   .boards .boards__nav {
-    top: 39%;
+    top: 32%;
   }
   .boards .boards__nav--prev {
     left: 0;
