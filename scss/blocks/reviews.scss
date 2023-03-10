@@ -1,22 +1,3 @@
-.reviews .reviews__body {
-    @include tablets{
-    align-items: center;
-    flex-direction: column;
-    padding: 0 0 0 2rem;
-  }
-  }
-  .reviews__avatar {
-    @include tablets{
-    margin-right: 0;
-    }
-  }
-  .reviews__desc {
-    @include tablets{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    }
-  }
 
 
 //----------reviews-----------//
@@ -33,12 +14,22 @@
   color: #292929;
   max-width: 30.8125rem;
   margin-bottom: 2rem;
+  @include phones {
+    font-size: rem(40px);
+    line-height: rem(36px);
+  }
 }
 .reviews__avatar {
   width: 15.8125rem;
   height: 16.5rem;
   margin-right: 2.5rem;
   flex-shrink: 0;
+  @include tablets{
+    width: rem(130px);
+    height: rem(130px);
+    margin-right: 0;
+    margin-bottom: rem(32px);
+    }
 }
 .reviews__img {
   max-width: 100%;
@@ -49,22 +40,38 @@
   background: #f8faf9;
   padding: 2.625rem 8.875rem 2.625rem 2.625rem;
   margin-bottom: 0.8125rem;
+  @include tablets{
+    align-items: center;
+    flex-direction: column;
+    padding: rem(56px) rem(24px) rem(46px);
+    margin-bottom: rem(31px);
+  }
 }
 .reviews__desc {
   padding-top: 1.75rem;
+  @include tablets{
+padding-top: 0;
+text-align: center;
+    }
 }
 .reviews__subtitle {
   margin-bottom: 0.875rem;
   font-size: 1.6875rem;
   line-height: 2rem;
   color: #292929;
+  @include tablets{
+    margin-bottom: rem(16px);
+  }
 }
 .reviews__text {
   font-weight: 300;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: rem(18px);
+  line-height: rem(22px);
   color: #666666;
   margin-bottom: 1.625rem;
+  @include tablets{
+    margin-bottom: rem(16px);
+  }
 }
 .reviews__author {
   font-weight: 500;

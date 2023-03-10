@@ -1,15 +1,14 @@
-  .team .team__list {
-    @include tablets{
+.team .team__list {
+  @include tablets {
     padding: 0rem 1rem 0rem 1rem;
     flex-direction: column;
   }
-  }
-  .team__ava-box {
-    @include tablets{
+}
+.team__ava-box {
+  @include tablets {
     display: none;
-    }
   }
-
+}
 
 //------------team-----------//
 .team {
@@ -25,14 +24,20 @@
     text-transform: uppercase;
     color: #292929;
     max-width: 30.8125rem;
-    margin-bottom: 3.3125rem;
+    margin-bottom: 2.0125rem;
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+    }
   }
   .team__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    @include tablets {
+      flex-direction: column;
+    }
   }
   .team__item {
     display: flex;

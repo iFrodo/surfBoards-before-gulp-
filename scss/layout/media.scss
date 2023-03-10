@@ -1,7 +1,7 @@
-//funtcion px to rem
-// @function rem($px) {
-//   @return $px / 16 +0rem;
-// }
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
 //regular expression
 //(?!rem\()-?\d+px(?!\))
 //funtcion px to rem
@@ -18,36 +18,7 @@
 }
 html {
   font-size: 16px;
-  @include tablets {
-    font-size: 14px;
-  }
   @include phones {
-    font-size: 12px;
+    font-size: 3.333333vmin
   }
 }
-
-// @media (max-width: 768px) {
-
-// @media (max-width: 480px) {
-
-//   .header,
-//   .info__body,
-//   .info__desc {
-//     padding: 1.5625rem 1rem 0px 1rem;
-//   }
-//   .info {
-//     margin-bottom: 10rem;
-//     &__title {
-//       font-size: 2.5rem;
-//       line-height: 2.25rem;
-//     }
-//   }
-//
-
-//   .form {
-//     padding: 0rem 1rem 0rem 1rem;
-//   }
-//   .reviews__body {
-//     padding: 2.625rem 1.875rem 2.625rem 2.625rem;
-//   }
-// }

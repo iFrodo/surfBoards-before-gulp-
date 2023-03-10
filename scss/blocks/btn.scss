@@ -15,7 +15,13 @@
     text-transform: none;
     padding: 1.3125rem 0.6875rem;
   }
-  &:hover{
-    background:#ffd417a8
+  &:hover {
+    background: #ffd417a8;
+  }
+}
+.info__button {
+  @include phones {
+    font-size: rem(19px);
+    line-height: rem(18px);
   }
 }

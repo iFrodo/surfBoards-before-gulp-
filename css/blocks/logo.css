@@ -1,0 +1,9 @@
+.logo {
+  width: 3.4375rem;
+  height: 2.4375rem;
+  margin-right: 1.175rem;
+}
+.logo__svg {
+  width: rem(55px);
+  height: rem(39px);
+}

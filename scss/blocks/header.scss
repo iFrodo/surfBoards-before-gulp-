@@ -1,3 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5625rem 0px 0px 0px;
+  z-index: 1;
+  @include tablets {
+    padding: rem(26px)  rem(16px) rem(0px) rem(11px);
+  }
+  @include phones{
+    padding: rem(26px)  rem(0px) rem(0px) rem(0px);
+  }
+}
 .header__menu {
   @include tablets {
     display: none;
@@ -9,56 +22,3 @@
     display: none;
   }
 }
-.info .header__burger {
-  @include tablets {
-    display: block;
-  }
-}
-// ----------------header-------------------------//
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5625rem 0px 0px 0px;
-  z-index: 1;
-}
-.logo {
-  width: 3.4375rem;
-  height: 2.4375rem;
-  margin-right: 2.875rem;
-}
-.menu__list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-right: 1.2375rem;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.25rem;
-  color: #ffffff;
-}
-.menu__link {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
-  color: #ffffff;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-.contacts__link {
-  @extend.menu__link;
-  white-space: nowrap;
-  font-size: 1.375rem;
-  line-height: 1.125rem;
-}
-.contacts__ico {
-  width: 1.230rem;
-  height: 0.875rem;
-  margin-right: 0.3125rem;
-}
-.menu__item:not(:last-child) {
-  margin-right: 1.375rem;
-}
-// ----------------header-------------------------//

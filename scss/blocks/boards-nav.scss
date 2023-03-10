@@ -2,14 +2,29 @@
   position: absolute;
   top: 54%;
   z-index: 10;
-  &--prev {
-    left: -1.625rem;
-  }
-  &--next {
-    right: -1.375rem;
-  }
 }
 .boards__ico {
   width: 1.5rem;
   height: 2.5rem;
+}
+
+.boards .boards__nav {
+  @include tablets {
+    top: 32%;
+    &--prev {
+      left: 7.775rem;
+    }
+    &--next {
+      right: 8.725rem;
+    }
+  }
+  @include phones {
+    top: 39%;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
+  }
 }
