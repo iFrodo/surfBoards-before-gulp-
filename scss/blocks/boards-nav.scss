@@ -1,7 +1,13 @@
 .boards__nav {
   position: absolute;
-  top: 54%;
+  top: 45%;
   z-index: 10;
+  &--prev{
+    left:-22px
+  }
+  &--next {
+    right: -24px;
+  }
 }
 .boards__ico {
   width: 1.5rem;
