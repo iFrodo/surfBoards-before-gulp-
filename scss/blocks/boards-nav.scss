@@ -1,31 +1,26 @@
+
 .boards__nav {
   position: absolute;
   top: 45%;
   z-index: 10;
-  &--prev{
-    left:-22px
+
+  &--prev {
+    left: -22px
   }
   &--next {
     right: -24px;
   }
-}
-.boards__ico {
-  width: 1.5rem;
-  height: 2.5rem;
-}
-
-.boards .boards__nav {
   @include tablets {
-    top: 32.3%;
+    top: 30.3%;
     &--prev {
-      left: 7.075rem;
+      left: 8.475rem;
     }
     &--next {
-      right: 7.825rem;
+      right: 7.925rem;
     }
   }
   @include phones {
-    top: 32%;
+    top: 24.6%;
     &--prev {
       left: 0;
     }
@@ -33,4 +28,8 @@
       right: 0;
     }
   }
+}
+.boards__ico {
+  width: 1.5rem;
+  height: 2.5rem;
 }
