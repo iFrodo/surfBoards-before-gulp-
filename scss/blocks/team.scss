@@ -1,14 +1,3 @@
-.team .team__list {
-  @include tablets {
-    padding: 0rem 1rem 0rem 1rem;
-    flex-direction: column;
-  }
-}
-.team__ava-box {
-  @include tablets {
-    display: none;
-  }
-}
 
 //------------team-----------//
 .team {
@@ -23,8 +12,12 @@
     line-height: 3.625rem;
     text-transform: uppercase;
     color: #292929;
-    max-width: 30.8125rem;
-    margin-bottom: 2.0125rem;
+
+    margin-bottom: rem(53px);
+    @include tablets {
+      
+    margin-bottom: rem(32px);
+    }
     @include phones {
       font-size: rem(40px);
       line-height: rem(36px);
@@ -36,7 +29,10 @@
     justify-content: center;
     gap: 1rem;
     @include tablets {
-      flex-direction: column;
+      @include tablets {
+        padding: 0rem 1rem 0rem 1rem;
+        flex-direction: column;
+      }
     }
   }
   .team__item {
@@ -57,6 +53,9 @@
     width: 13.75rem;
     height: 18.125rem;
     margin-bottom: 1.3125rem;
+    @include tablets {
+      display: none;
+    }
   }
   .team__ava {
     width: 100%;
@@ -69,12 +68,12 @@
     color: #292929;
   }
   .team__about {
-    // position: absolute;
-    // left: 0;
-    // top: 21.5rem;
     text-align: center;
     transition: 0.7s;
     opacity: 0;
+    @include tablets{
+      display: none;
+    }
   }
   .team__hoby {
     font-weight: 400;

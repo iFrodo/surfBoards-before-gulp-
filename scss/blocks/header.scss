@@ -11,13 +11,8 @@
     padding: rem(26px)  rem(0px) rem(0px) rem(0px);
   }
 }
-.header__menu {
-  @include tablets {
-    display: none;
-  }
-}
 
-.menu__contacts--header {
+.header__contacts {
   @include tablets {
     display: none;
   }

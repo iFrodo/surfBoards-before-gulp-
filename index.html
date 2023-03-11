@@ -21,7 +21,7 @@
                         <svg class="logo__svg">
                             <use xlink:href="./img/sprite.svg#logo"></use>
                         </svg></a>
-                    <nav class="header__menu menu">
+                    <nav class="header__menu menu  " id="burgerMenu">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__link">О нас</a>
@@ -46,13 +46,13 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="menu__contacts contacts menu__contacts--header">
+                    <div class="contacts header__contacts ">
                         <a href="tel:88009039090" class="contacts__link">
                             <svg fill='white' class="contacts__ico">
                                 <use xlink:href="./img/sprite.svg#phone"></use>
                             </svg>8 800 903 90 90</a>
                     </div>
-                    <button class="burger"><span></span></button>
+                    <button class="burger" id="burger"><span></span></button>
                 </header>
 
                 <div class="info__body">
@@ -361,7 +361,7 @@
 
                     <div class="form__col">
                         <div class="form__row form__row--textarea">
-                            <label class="form__block">
+                            <label class="form__block" name='block'>
                                 <span class="form__title">Комментарий</span>
                                 <textarea type="text" class="form__input form__input--textarea"></textarea>
                             </label>
@@ -412,7 +412,7 @@
                 <div class="container footer__container">
                     <div class="menu__contacts contacts">
                         <div class="contacts__adress">Москва, ул.Новый Арбат, д.31/12</div>
-                        <a href="tel:88009039090" class="contacts__link contacts__link--theme-dark"><svg 
+                        <a href="tel:88009039090" class="contacts__link contacts__link--theme-dark"><svg
                                 class="contacts__ico">
                                 <use xlink:href="./img/sprite.svg#phone"></use>
                             </svg>8 800 903 90 90</a>
@@ -455,5 +455,41 @@
 
     </div>
 </body>
+<script src="./js/hamburger.js">
+    let form = document.querySelector('.form')
+    let formElements = form.elements
+    formElements[7].innerText = 'Нашел через js'
+    formElements[0].value = 'Игорь'
+    formElements[1].value = '+79780001000'
+    formElements[2].value = 'ulica'
+    formElements[3].value = 'dom'
+    formElements[4].value = 'korp'
+    formElements[5].value = 'kv'
+    formElements[6].value = '5'
+    formElements[7].value = 'textarea'
+
+    formElements[10].checked = true
+    let name = formElements[0].value
+    let phone = formElements[1].value
+    let adress = formElements[2].value + " " + formElements[3].value + " " + formElements[4].value + " " + formElements[5].value + " " + formElements[6].value
+    let comment = formElements[7].value
+    let paymant = ''
+    let recall = ''
+
+
+
+    formElements[11].addEventListener('click', function (e) {
+        e.preventDefault()
+        if (formElements[8].checked == true) {
+            paymant = 'Оплата наличными'
+        }
+        else {
+            paymant = 'Оплата картой'
+        }
+        alert(paymant)
+    })
+    console.log(formElements)
+    console.log(name, phone, adress, paymant)
+</script>
 
 </html>
