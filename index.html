@@ -456,40 +456,7 @@
     </div>
 </body>
 <script src="./js/hamburger.js">
-    let form = document.querySelector('.form')
-    let formElements = form.elements
-    formElements[7].innerText = 'Нашел через js'
-    formElements[0].value = 'Игорь'
-    formElements[1].value = '+79780001000'
-    formElements[2].value = 'ulica'
-    formElements[3].value = 'dom'
-    formElements[4].value = 'korp'
-    formElements[5].value = 'kv'
-    formElements[6].value = '5'
-    formElements[7].value = 'textarea'
-
-    formElements[10].checked = true
-    let name = formElements[0].value
-    let phone = formElements[1].value
-    let adress = formElements[2].value + " " + formElements[3].value + " " + formElements[4].value + " " + formElements[5].value + " " + formElements[6].value
-    let comment = formElements[7].value
-    let paymant = ''
-    let recall = ''
-
-
-
-    formElements[11].addEventListener('click', function (e) {
-        e.preventDefault()
-        if (formElements[8].checked == true) {
-            paymant = 'Оплата наличными'
-        }
-        else {
-            paymant = 'Оплата картой'
-        }
-        alert(paymant)
-    })
-    console.log(formElements)
-    console.log(name, phone, adress, paymant)
+    
 </script>
 
 </html>
