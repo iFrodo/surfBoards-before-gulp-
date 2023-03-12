@@ -471,7 +471,6 @@ a {
 }
 @media (max-width: 480px) {
   .info .info__title {
-    padding-top: 3.25rem;
     font-size: 2.5rem;
     line-height: 2.25rem;
     margin-bottom: 0.75rem;
@@ -607,12 +606,6 @@ a {
     margin-bottom: 0.3125rem;
   }
 }
-@media (max-width: 480px) {
-  .qualities__title {
-    padding-top: 3.25rem;
-  }
-}
-
 .qualities__list {
   display: -webkit-box;
   display: -ms-flexbox;
