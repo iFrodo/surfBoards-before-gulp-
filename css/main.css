@@ -761,6 +761,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.boards .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+}
 .boards .boards__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,6 +783,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.boards .boards__container--active {
+  position: absolute;
+  left: 100%;
+  overflow: hidden;
 }
 .boards .boards__img {
   position: relative;
@@ -962,8 +974,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -986,8 +996,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -997,20 +1005,30 @@ a {
       -ms-flex-align: center;
           align-items: center;
   max-width: 13.75rem;
+  text-align: center;
   position: relative;
 }
 .team .team__ava-box {
-  width: 13.75rem;
-  height: 18.125rem;
   margin-bottom: 1.3125rem;
 }
 @media (max-width: 768px) {
-  .team .team__ava-box {
+  .team .team__list--desctop {
     display: none;
+  }
+}
+.team .team__list--mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .team .team__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .team .team__ava {
   width: 100%;
+  height: 100%;
   display: block;
 }
 .team .team__name {
@@ -1019,15 +1037,22 @@ a {
   line-height: 1.5625rem;
   color: #292929;
 }
+.team .team__desc {
+  width: 9px;
+  height: 7px;
+}
 .team .team__about {
+  position: absolute;
+  top: 100%;
   text-align: center;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  opacity: 0;
+  overflow: hidden;
+  height: 0;
 }
 @media (max-width: 768px) {
   .team .team__about {
-    display: none;
+    position: static;
   }
 }
 .team .team__hoby {
@@ -1041,9 +1066,6 @@ a {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #666666;
-}
-.team .team__name:hover + .team__about {
-  opacity: 1;
 }
 
 .reviews__header {
@@ -1212,6 +1234,27 @@ a {
   width: 100%;
   display: block;
   border-radius: 50%;
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 17.5rem;
+}
+
+.reviews__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reviews__item--active {
+  position: static;
+  opacity: 1;
 }
 
 .form {
@@ -1640,29 +1683,29 @@ a {
 
 .boards__nav {
   position: absolute;
-  top: 45%;
+  top: 35%;
   z-index: 10;
 }
 .boards__nav--prev {
-  left: -22px;
+  left: 0px;
 }
 .boards__nav--next {
-  right: -24px;
+  right: 0px;
 }
 @media (max-width: 768px) {
   .boards__nav {
-    top: 30.3%;
+    top: 33.3%;
   }
   .boards__nav--prev {
-    left: 8.475rem;
+    left: 0;
   }
   .boards__nav--next {
-    right: 7.925rem;
+    right: 0;
   }
 }
 @media (max-width: 480px) {
   .boards__nav {
-    top: 24.6%;
+    top: 33.6%;
   }
   .boards__nav--prev {
     left: 0;

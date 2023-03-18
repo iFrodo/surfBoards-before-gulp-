@@ -1,26 +1,26 @@
 
 .boards__nav {
   position: absolute;
-  top: 45%;
+  top: 35%;
   z-index: 10;
 
   &--prev {
-    left: -22px
+    left: 0px;
   }
   &--next {
-    right: -24px;
+    right: 0px;
   }
   @include tablets {
-    top: 30.3%;
+    top: 33.3%;
     &--prev {
-      left: 8.475rem;
+      left: 0;
     }
     &--next {
-      right: 7.925rem;
+      right: 0;
     }
   }
   @include phones {
-    top: 24.6%;
+    top: 33.6%;
     &--prev {
       left: 0;
     }

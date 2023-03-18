@@ -1,6 +1,7 @@
 
 
 //----------reviews-----------//
+
 .reviews__header {
   display: flex;
   flex-direction: row;
@@ -114,4 +115,22 @@ text-align: center;
   width: 100%;
   display: block;
   border-radius: 50%;
+}
+.reviews__list{
+  position: relative;
+  min-height: rem(280px);
+
+}
+.reviews__item{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0; 
+  bottom: 0;
+  opacity: 0;
+  transition: .3s;
+}
+.reviews__item--active{
+  position: static;
+  opacity: 1;
 }
