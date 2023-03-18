@@ -3,6 +3,12 @@
   background: #f8faf9;
   align-items: center;
 
+.bx-wrapper{
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+}
   .boards__container {
     display: flex;
 
@@ -10,6 +16,12 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+
+  .boards__container--active {
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
   }
 
   .boards__img {
