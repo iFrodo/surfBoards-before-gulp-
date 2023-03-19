@@ -2060,6 +2060,12 @@ a {
   height: 25%;
   width: 25%;
 }
+@media (max-width: 768px) {
+  .modal__container {
+    width: 70%;
+    height: 20%;
+  }
+}
 
 .modal__content {
   font-weight: 500;
