@@ -2028,7 +2028,7 @@ a {
   position: absolute;
   height: 0%;
   width: 0%;
-  background-color: #333537;
+  background: rgba(0, 0, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2058,7 +2058,7 @@ a {
           justify-content: center;
   background-color: white;
   height: 25%;
-  width: 50%;
+  width: 25%;
 }
 
 .modal__content {
