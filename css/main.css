@@ -1032,6 +1032,7 @@ a {
   display: block;
 }
 .team .team__name {
+  margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 1.3125rem;
   line-height: 1.5625rem;
@@ -1453,6 +1454,10 @@ a {
     width: 100%;
     padding: 0;
   }
+}
+
+.input-error {
+  border-color: hotpink;
 }
 
 .radio {
@@ -2017,4 +2022,60 @@ a {
 .logo__svg {
   width: 3.4375rem;
   height: 2.4375rem;
+}
+
+.form-modal {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  background-color: #333537;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  height: 25%;
+  width: 50%;
+}
+
+.modal__content {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  width: 1.625rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.error-text {
+  color: red;
 }
