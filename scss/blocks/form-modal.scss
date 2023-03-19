@@ -18,6 +18,11 @@
   background-color: white;
   height: 25%;
   width: 25%;
+  @include tablets{
+    width: 70%;
+    height: 20%;
+
+  }
 }
 
 .modal__content {
