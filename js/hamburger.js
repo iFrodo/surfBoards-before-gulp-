@@ -8,15 +8,14 @@ hamburgerButton.addEventListener("click", function (e) {
 
 let prevButton = document.querySelector(".boards__nav--prev");
 let nextButton = document.querySelector(".boards__nav--next");
-let slide = document.querySelector('.boards')
+let slide = document.querySelector(".boards");
 // nextButton.addEventListener('click', function(e){
 //   e.preventDefault()
 //   slide.classList.toggle('.boards_container--active')
 // }
 
-
 // )
-console.log(prevButton)
+console.log(prevButton);
 
 //   if (
 //     hamburgerButton.classList.contains("burger--active") == true &&
@@ -67,17 +66,17 @@ console.log(prevButton)
 //   console.log(userName, phone, adress, paymant, comment);
 // });
 $(document).ready(() => {
-  $(".btn").on("click", (e) => {
+  $(".form__btn").on("click", (e) => {
     e.preventDefault();
     let formTitle = $(".form__title");
     let formInput = $(".form__input");
-// $.each(formTitle),(ndx, item ) =>{
-//   let formTitleElements= $(item)[ndx].innerText
-//   console.log(formTitleElements)
-// }
+    // $.each(formTitle),(ndx, item ) =>{
+    //   let formTitleElements= $(item)[ndx].innerText
+    //   console.log(formTitleElements)
+    // }
     for (let i = 0; i < formTitle.length; i++) {
       let formTitleElements = formTitle[i].innerText;
-      let formInputValues = $(formInput[i]).val();
+      let formInputValues = $(formInput[i + 1]).val();
       let result = formTitleElements + ": " + formInputValues;
       console.log(result);
     }
