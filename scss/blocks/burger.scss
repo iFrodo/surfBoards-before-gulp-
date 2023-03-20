@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 0.270625rem;
+    height: rem(4px);
     left: 0;
     background-color: #fff;
     border-radius: 0.270625rem;
@@ -21,9 +21,9 @@
   span {
     position: absolute;
     width: 100%;
-    height: 0.270625rem;
+    height: rem(4px);
     left: 0;
-    top: 0.62rem;
+    top: rem(10px);
     background-color: #fff;
     border-radius: 0.270625rem;
     transition: transform .3s;
@@ -50,7 +50,7 @@
       transform: rotate(45deg);
     }
     &::after{
-      transform: rotate(-45deg) translate(7px, -7px);
+      transform: rotate(-45deg) translate(rem(7px), rem(-7px));
     }
 
 

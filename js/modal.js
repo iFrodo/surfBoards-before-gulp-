@@ -36,16 +36,26 @@ $(".form__btn").click((e) => {
       content.text(data.message);
     });
     request.fail((data) => {
-      content.text(data.statusText);
+      let message;
+      if(data?.responseJSON?.message){
+        message = responseJSON.message
+      }else{
+        message = 'Произошла ошибка,попробуйте позже'
+      }
+      content.text(message);
       content.addClass("error-text");
     });
     request.always(() => {
-      $(".form-modal").css({ height: "100%", width: "100%" });
+     $.fancybox.open({
+      src:'#form-modal',
+      type:'inline',
+     })
     });
   }
 });
 
 $(".btn--close").click((e) => {
   e.preventDefault();
-  $(".form-modal").css({ height: "0%", width: "0%" });
+  $.fancybox.close()
+  // $(".form-modal").css({ height: "0%", width: "0%" });
 });

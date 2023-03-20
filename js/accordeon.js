@@ -20,6 +20,7 @@ const closeEveryItem = container =>{
 }
 $('.team__name').click(e=>{
   $this = $(e.currentTarget)
+  // $('.team__name').css({'color':'#fff934'})
   const container = $this.closest('.team')
   const elemContainer = $this.closest('.team__item')
   if (elemContainer.hasClass('active')){
