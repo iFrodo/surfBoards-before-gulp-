@@ -85,6 +85,7 @@
     font-size: rem(21px);
     line-height: rem(25px);
     color: #292929;
+    cursor: pointer;
   }
 
   .team__desc {
@@ -94,6 +95,7 @@
 
   .team__about {
     position: absolute;
+    left: 0;
     top: 100%;
     text-align: center;
     transition: 0.7s;

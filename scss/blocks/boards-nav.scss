@@ -11,16 +11,16 @@
     right: 0px;
   }
   @include tablets {
-    top: 33.3%;
+    top: 27.3%;
     &--prev {
-      left: 0;
+      left: 19%;
     }
     &--next {
-      right: 0;
+      right: 19%;
     }
   }
   @include phones {
-    top: 33.6%;
+    top: rem(168px);
     &--prev {
       left: 0;
     }

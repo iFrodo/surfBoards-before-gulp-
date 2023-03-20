@@ -1037,6 +1037,7 @@ a {
   font-size: 1.3125rem;
   line-height: 1.5625rem;
   color: #292929;
+  cursor: pointer;
 }
 .team .team__desc {
   width: 9px;
@@ -1044,6 +1045,7 @@ a {
 }
 .team .team__about {
   position: absolute;
+  left: 0;
   top: 100%;
   text-align: center;
   -webkit-transition: 0.7s;
@@ -1457,7 +1459,7 @@ a {
 }
 
 .input-error {
-  border-color: hotpink;
+  border-color: #ff0000;
 }
 
 .radio {
@@ -1480,7 +1482,7 @@ a {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../img/galochka.svg) center center no-repeat;
+  background: url(../img/checkmark.svg) center center no-repeat;
 }
 
 .radio__elem {
@@ -1699,18 +1701,18 @@ a {
 }
 @media (max-width: 768px) {
   .boards__nav {
-    top: 33.3%;
+    top: 27.3%;
   }
   .boards__nav--prev {
-    left: 0;
+    left: 19%;
   }
   .boards__nav--next {
-    right: 0;
+    right: 19%;
   }
 }
 @media (max-width: 480px) {
   .boards__nav {
-    top: 33.6%;
+    top: 10.5rem;
   }
   .boards__nav--prev {
     left: 0;
@@ -1832,7 +1834,7 @@ a {
   content: "";
   position: absolute;
   width: 100%;
-  height: 0.270625rem;
+  height: 0.25rem;
   left: 0;
   background-color: #fff;
   border-radius: 0.270625rem;
@@ -1840,9 +1842,9 @@ a {
 .burger span {
   position: absolute;
   width: 100%;
-  height: 0.270625rem;
+  height: 0.25rem;
   left: 0;
-  top: 0.62rem;
+  top: 0.625rem;
   background-color: #fff;
   border-radius: 0.270625rem;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1869,8 +1871,8 @@ a {
           transform: rotate(45deg);
 }
 .burger--active::after {
-  -webkit-transform: rotate(-45deg) translate(7px, -7px);
-          transform: rotate(-45deg) translate(7px, -7px);
+  -webkit-transform: rotate(-45deg) translate(0.4375rem, -0.4375rem);
+          transform: rotate(-45deg) translate(0.4375rem, -0.4375rem);
 }
 
 .socials {
@@ -2025,46 +2027,11 @@ a {
 }
 
 .form-modal {
-  position: absolute;
-  height: 0%;
-  width: 0%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
+  display: none;
 }
 
 .modal__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: white;
-  height: 25%;
-  width: 25%;
-}
-@media (max-width: 768px) {
-  .modal__container {
-    width: 70%;
-    height: 20%;
-  }
+  text-align: center;
 }
 
 .modal__content {
