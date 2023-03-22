@@ -1,6 +1,16 @@
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
+
+.fp-watermark {
+    display: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #ececec;
+}
+
 @import "./layout/normalize";
 @import "./layout/media";
 @import "./layout/layout";
