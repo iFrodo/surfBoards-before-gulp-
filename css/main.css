@@ -349,6 +349,11 @@ html {
   }
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -370,6 +375,7 @@ body {
 }
 
 .section {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,6 +390,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .header {
@@ -1945,7 +1960,7 @@ a {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #333537;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2126,6 +2141,11 @@ a {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+@media (max-width: 768px) {
+  .horizontal-slider__content {
+    padding: 0.625rem 0.3125rem 0 0.625rem;
+  }
 }
 
 .fp-watermark {

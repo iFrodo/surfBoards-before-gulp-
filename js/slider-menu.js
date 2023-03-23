@@ -1,19 +1,17 @@
-let mesure = (content,item) =>{
-let titleBox = item.find('.horizontal-slider__title-box')
-  let itemsWidth = titleBox.width() * 3
+let mesure = (content, item) => {
+  let titleBox = item.find(".horizontal-slider__title-box");
+  let itemsWidth = titleBox.width() * 3;
 
-  if (document.documentElement.clientWidth > 768){
- return content.animate({
-  width:'524px',
-
-})
-  }else {
+  if (document.documentElement.clientWidth > 768) {
     return content.animate({
-      width:document.documentElement.clientWidth - itemsWidth ,
-
-    })
+      width: "524px",
+    });
+  } else {
+    return content.animate({
+      width: document.documentElement.clientWidth - itemsWidth,
+    });
   }
-}
+};
 $(function () {
   //обрабатываем клик по блоку с классом horizontal-slider__title
   $(".horizontal-slider__title-box").on("click", function (e) {
@@ -44,14 +42,12 @@ $(function () {
         width: "0px",
       });
       //кликнутому 530
-      mesure(content,item)
+      mesure(content, item);
       //иначе
-
     } else {
       item.removeClass("active");
       content.animate({
         width: "0px",
-     
       });
     }
   });
@@ -67,4 +63,3 @@ $(function () {
     }
   });
 });
-
