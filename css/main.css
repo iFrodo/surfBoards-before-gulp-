@@ -2095,11 +2095,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 768px) {
-  .horizontal-slider__title-box {
-    max-width: 3.75rem;
-  }
-}
 .horizontal-slider__title-box--long {
   background: url(../img/longboard.jpeg) center center/cover no-repeat;
 }

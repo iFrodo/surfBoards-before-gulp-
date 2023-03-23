@@ -33,10 +33,7 @@ $(function () {
         height: "100vh",
       });
       //иначе
-      // } else if (document.documentElement.clientWidth == 768){
-      //   content.animate({
-      //     width: "60vw",
-      //   })
+
     } else {
       item.removeClass("active");
       content.animate({
@@ -44,6 +41,11 @@ $(function () {
         height: "0",
       });
     }
+    // if (document.documentElement.clientWidth <= 768){
+    //   content.animate({
+    //     width: "60vw",
+    //   })
+    // }
   });
 
   // клик вне аккордеона

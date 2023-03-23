@@ -4,7 +4,7 @@
 let doFullpage = document.documentElement.clientWidth;
 $(document).ready(function () {
   //что бы не работал на мобилках
-  if (doFullpage > 768) {
+  // if (doFullpage > 768) {
     $("#fullpage").fullpage({
       //options here
       scrollOverflow: false,
@@ -19,4 +19,4 @@ $(document).ready(function () {
       // fixedElements:('.header')
     });
   }
-});
+);

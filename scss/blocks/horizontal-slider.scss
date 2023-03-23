@@ -27,9 +27,7 @@
   align-items: center;
   justify-content: center;
 
-  @include tablets {
-    max-width: rem(60px);
-  }
+
 
   // filter: brightness(100%);
 
