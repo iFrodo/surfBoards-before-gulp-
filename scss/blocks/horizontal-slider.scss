@@ -70,6 +70,9 @@
   font-weight: 400;
   font-size: rem(16px);
   line-height: rem(24px);
+  @include tablets{
+    padding: rem(10px) rem(5px) 0 rem(10px);
+  }
 }
 
 .fp-watermark {
