@@ -29,10 +29,14 @@ $(function () {
       });
       //кликнутому 530
       content.animate({
-        width: "35vw",
+        width: "50vw",
         height: "100vh",
       });
       //иначе
+      // } else if (document.documentElement.clientWidth == 768){
+      //   content.animate({
+      //     width: "60vw",
+      //   })
     } else {
       item.removeClass("active");
       content.animate({
