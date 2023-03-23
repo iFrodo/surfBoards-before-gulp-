@@ -3,11 +3,13 @@
 
 let doFullpage = document.documentElement.clientWidth;
 $(document).ready(function () {
+  //что бы не работал на мобилках
   if (doFullpage > 768) {
     $("#fullpage").fullpage({
+      //options here
       scrollOverflow: false,
       resize: false,
-      //options here
+
       autoScrolling: true,
       scrollHorizontally: true,
       verticalCentered: false,
