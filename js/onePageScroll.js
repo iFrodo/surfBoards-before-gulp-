@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#fullpage").fullpage({
       //options here
       scrollOverflow: false,
-      resize: false,
+
 
       autoScrolling: true,
       scrollHorizontally: true,

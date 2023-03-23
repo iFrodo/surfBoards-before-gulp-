@@ -1,6 +1,22 @@
+let mesure = (content,item) =>{
+let titleBox = item.find('.horizontal-slider__title-box')
+  let itemsWidth = titleBox.width() * 3
+
+  if (document.documentElement.clientWidth > 768){
+ return content.animate({
+  width:'524px',
+
+})
+  }else {
+    return content.animate({
+      width:document.documentElement.clientWidth - itemsWidth ,
+
+    })
+  }
+}
 $(function () {
   //обрабатываем клик по блоку с классом horizontal-slider__title
-  $(".horizontal-slider__title").on("click", function (e) {
+  $(".horizontal-slider__title-box").on("click", function (e) {
     e.preventDefault();
     //получаем нужные нам данные
     let $this = $(this),
@@ -28,24 +44,16 @@ $(function () {
         width: "0px",
       });
       //кликнутому 530
-      content.animate({
-        width: "50vw",
-        height: "100vh",
-      });
+      mesure(content,item)
       //иначе
 
     } else {
       item.removeClass("active");
       content.animate({
         width: "0px",
-        height: "0",
+     
       });
     }
-    // if (document.documentElement.clientWidth <= 768){
-    //   content.animate({
-    //     width: "60vw",
-    //   })
-    // }
   });
 
   // клик вне аккордеона
@@ -59,3 +67,4 @@ $(function () {
     }
   });
 });
+
