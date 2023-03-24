@@ -1756,8 +1756,8 @@ a {
 }
 
 .player-section__container {
-  width: 660px;
-  height: 409px;
+  width: 41.25rem;
+  height: 25.5625rem;
 }
 
 .player-section__title {
@@ -1794,7 +1794,7 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 35px;
+  height: 2.1875rem;
   background: #3e3e3e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1805,13 +1805,13 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 1.5625rem;
   color: white;
 }
 
 .player__start {
-  width: 20px;
-  height: 16px;
+  width: 1.25rem;
+  height: 1rem;
   cursor: pointer;
   background: url(../img/play.svg) center center/cover no-repeat;
 }
@@ -1821,22 +1821,22 @@ a {
 }
 
 .player__playback {
-  width: 460px;
-  height: 4px;
+  width: 28.75rem;
+  height: 0.25rem;
   cursor: pointer;
   position: absolute;
-  top: 15px;
-  left: 75px;
+  top: 0.9375rem;
+  left: 4.6875rem;
   background: url(../img/bar.svg) center center/cover no-repeat;
 }
 
 .player__playback-button {
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background: inherit;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
+  top: -0.3125rem;
   left: 0;
 }
 
