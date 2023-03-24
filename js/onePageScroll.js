@@ -39,7 +39,7 @@ const performTransition = (sectionEq) => {
     sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
     setTimeout(() => {
       inScroll = false;
-    }, 1300);
+    }, 800);
   }
 };
 const viewportScroller = () => {
@@ -61,26 +61,29 @@ const viewportScroller = () => {
 };
 $(window).on("wheel", (e) => {
   const deltaY = e.originalEvent.deltaY;
-  const scroller = viewportScroller()
+  const scroller = viewportScroller();
+  // let map = $('.map')
+  // console.log(map)
   if (deltaY > 0) {
+    //&& e.target != map
     //next
-    scroller.next()
+    scroller.next();
   }
   if (deltaY < 0) {
     //prev
-    scroller.prev()
+    scroller.prev();
   }
 });
 $(window).on("keydown", (e) => {
   const tagName = e.target.tagName.toLowerCase();
-  const scroller = viewportScroller()
+  const scroller = viewportScroller();
   if (tagName != "textarea" && tagName != "input") {
     switch (e.keyCode) {
       case 38:
-        scroller.next();
+        scroller.prev();
         break;
       case 40:
-        scroller.prev();
+        scroller.next();
         break;
     }
   }
