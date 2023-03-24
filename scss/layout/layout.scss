@@ -15,6 +15,7 @@ html {
   max-width: rem(940px);
   margin: 0 auto;
   position: relative;
+
 }
 
 body {
@@ -34,8 +35,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.maincontent{
+
+.maincontent {
   height: 100%;
-  transition: transform 1s;
+  transition: transform .8s;
   will-change: transform;
 }

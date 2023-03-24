@@ -545,15 +545,30 @@
                     </div>
                 </div>
             </section>
-            <!-- <section data-section-id="work" class="work section section">
-            <div class="container">
-                <h2 class="work__title">Как мы работаем</h2>
-                <iframe width="379" height="291" src="https://www.youtube.com/embed/eSWST13stO4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </section> -->
+            <section data-section-id="work" class="player-section section">
+                <div class="container">
+                    <h2 class="player-section__title">Как мы работаем</h2>
+                    <div class="player-section__container container">
+                        <div class="player">
+                            <div class="player__wrapper">
+                                <div id="yt-player" class="player__elem"></div>
+                                <div class="player__splash player__splash--active "></div>
+                            </div>
+                            <div class="player__controls">
+
+                                <a class="player__start"></a>
+                                <div class="player__playback">
+                                    <a class="player__playback-button"></a>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-completed">0:00</span> :
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section data-section-id="horizontal-slider" class='horizontal-slider section'>
                 <ul class="horizontal-slider__list">
                     <li class="horizontal-slider__item  ">
@@ -732,7 +747,7 @@
             </section>
 
             <section data-section-id="navigation" class="navigation section">
-                <div class="map">
+                <div id='map' class="map">
                 </div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -778,6 +793,35 @@
                     </div>
                 </footer>
             </section>
+            <!-- <ul class="fixed-menu" id="fixed-menu">
+                <li class="fixed-menu__item" data-menu-anchor="promo">
+                    <a  class="fixed-menu__dot" title="Приветствие"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="about">
+                    <a class="fixed-menu__dot"  title="О нас"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="page-slider">
+                    <a  class="fixed-menu__dot"  title="Доски"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="team">
+                    <a  class="fixed-menu__dot"  title="Команда"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="menu">
+                    <a  class="fixed-menu__dot"  title="Меню"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="reviews">
+                    <a  class="fixed-menu__dot"  title="Отзывы"></a>
+                </li>
+                <li class="fixed-menu__item active" data-menu-anchor="page-video">
+                    <a  class="fixed-menu__dot"  title="Как мы работаем"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="delivery">
+                    <a  class="fixed-menu__dot"  title="Оформление заказа"></a>
+                </li>
+                <li class="fixed-menu__item" data-menu-anchor="map">
+                    <a  class="fixed-menu__dot"  title="Контакты"></a>
+                </li>
+            </ul> -->
         </div>
     </div>
 </body>
@@ -792,6 +836,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"
     integrity="sha512-gRg3MTbqGUwZiqkDRUj7BJOqiYX6tQDAkZVq6zCHfRUxBhoW0kRG4ASllaK31PIe+I+xdaJhLcZXbs2O2r8SRg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="./js/hamburger.js"></script>
 <script src="./js/reviews.js"></script>
 <script src="./js/accordeon.js"></script>
@@ -799,6 +845,9 @@
 <script src="./js/modal.js"></script>
 <script src="./js/slider-menu.js"></script>
 <script src="./js/onePageScroll.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/player.js"></script>
+
 
 
 
