@@ -3,21 +3,6 @@ const playerContainer = $(".player");
 const playerStart = $(".player__start");
 const playerSplash = $(".player__splash");
 ////play/pause////
-let eventsInit = () => {
-  $(".player__start").click((e) => {
-    e.preventDefault();
-    if (playerStart.hasClass("player__start--paused")) {
-      playerStart.removeClass("player__start--paused");
-      playerSplash.removeClass("player__splash--active");
-      player.pauseVideo();
-    } else {
-      playerStart.addClass("player__start--paused");
-      playerSplash.addClass("player__splash--active");
-      player.playVideo();
-    }
-  });
-};
-////^play/pause////
 
 ////seconds to seconds:minutes////
 const formatTime = (timeSec) => {
@@ -90,4 +75,20 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
+let eventsInit = () => {
+  $(".player__start").click((e) => {
+    e.preventDefault();
+    if (playerStart.hasClass("player__start--paused")) {
+      playerStart.removeClass("player__start--paused");
+      playerSplash.removeClass("player__splash--active");
+      player.pauseVideo();
+    } else {
+      playerStart.addClass("player__start--paused");
+      playerSplash.addClass("player__splash--active");
+      player.playVideo();
+    }
+  });
+};
+////^play/pause////
+
 eventsInit();
