@@ -1,37 +1,44 @@
 .player {
   position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: rem(660px);
+  height: rem(409px);
+    @include tablets{
+    width: rem(594px);
+    height: rem(351px);
+  }
+  @include phones{
+    width: rem(394px);
+    height: rem(233px);
+  }
 }
 
 .player__wrapper {
   width: 100%;
+  height: 100%;
   outline: none;
   display: block;
   position: relative;
 }
+.player__elem{
+  width: 100%;
+  height: 100%;
+}
 
 .player-section__container {
-  width: rem(660px);
-  height: rem(409px);
-  // @include tablets{
-  //   width: rem(460px);
-  //   height: rem(209px);
-  // }
+  display: flex;
+  justify-content: center;
 }
 
 .player-section__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
+
   text-align: unset;
   display: flex;
   justify-content: center;
   margin-bottom: 1.875rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
 }
+
 .player__splash {
   position: absolute;
   top: 0;
@@ -77,12 +84,12 @@
 }
 
 .player__playback {
-  width: rem(460px);
+  flex:1;
+  margin: 0 rem(20px);
   height: rem(4px);
   cursor: pointer;
-  position: absolute;
-  top: rem(15px);
-  left: rem(75px);
+  position: relative;
+
   background: url(../img/bar.svg)center center / cover no-repeat;
 }
 

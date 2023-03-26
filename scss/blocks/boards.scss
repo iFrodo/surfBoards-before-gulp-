@@ -3,12 +3,13 @@
   background: #f8faf9;
   align-items: center;
 
-.bx-wrapper{
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-  position: relative;
-}
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+  }
+
   .boards__container {
     display: flex;
 
@@ -105,11 +106,9 @@
   }
 
   .boards__title {
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 2.6875rem;
-    text-transform: uppercase;
-    color: #292929;
+    color: inherit;
+    font-size: rem(36px);
+    line-height: rem(43px);
     margin-bottom: rem(24px);
 
     @include tablets {

@@ -45,11 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: rem(48px);
-  line-height: rem(58px);
-  text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: rem(61px);
 
   @include tablets {
