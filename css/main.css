@@ -401,6 +401,14 @@ a {
   will-change: transform;
 }
 
+.section__main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  text-transform: uppercase;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,10 +477,7 @@ a {
   }
 }
 .info .info__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
+  color: inherit;
   max-width: 30.8125rem;
   margin-bottom: 1.25rem;
 }
@@ -578,11 +583,7 @@ a {
 }
 
 .why__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
   max-width: 30.8125rem;
   margin-bottom: 0.9375rem;
 }
@@ -900,11 +901,9 @@ a {
   }
 }
 .boards .boards__title {
-  font-weight: 700;
+  color: inherit;
   font-size: 2.25rem;
   line-height: 2.6875rem;
-  text-transform: uppercase;
-  color: #292929;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -966,11 +965,7 @@ a {
           align-items: center;
 }
 .team .team__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
   margin-bottom: 3.3125rem;
 }
 @media (max-width: 768px) {
@@ -1099,11 +1094,7 @@ a {
 }
 
 .reviews__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
   max-width: 30.8125rem;
   margin-bottom: 2rem;
 }
@@ -1335,11 +1326,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 3.8125rem;
 }
 @media (max-width: 768px) {
@@ -1744,26 +1731,45 @@ a {
 .player {
   position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 41.25rem;
+  height: 25.5625rem;
+}
+@media (max-width: 768px) {
+  .player {
+    width: 37.125rem;
+    height: 21.9375rem;
+  }
+}
+@media (max-width: 480px) {
+  .player {
+    width: 24.625rem;
+    height: 14.5625rem;
+  }
 }
 
 .player__wrapper {
   width: 100%;
+  height: 100%;
   outline: none;
   display: block;
   position: relative;
 }
 
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
 .player-section__container {
-  width: 41.25rem;
-  height: 25.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .player-section__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
   text-align: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1772,8 +1778,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 1.875rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
 }
 
 .player__splash {
@@ -1821,12 +1826,13 @@ a {
 }
 
 .player__playback {
-  width: 28.75rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1.25rem;
   height: 0.25rem;
   cursor: pointer;
-  position: absolute;
-  top: 0.9375rem;
-  left: 4.6875rem;
+  position: relative;
   background: url(../img/bar.svg) center center/cover no-repeat;
 }
 
@@ -2141,6 +2147,27 @@ a {
   display: flex;
   position: relative;
 }
+.horizontal-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.horizontal-slider__main-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  position: absolute;
+  top: 7.8125rem;
+  left: 5.25rem;
+  text-transform: none;
+  z-index: 2;
+}
 
 .horizontal-slider__list {
   position: absolute;
@@ -2150,6 +2177,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
 }
 
 .horizontal-slider__item {
@@ -2158,37 +2189,58 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 480px) {
+  .horizontal-slider__item.active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}
 
 .horizontal-slider__title-box {
   width: 6.25rem;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 7.5rem;
+  position: relative;
+  z-index: 2;
 }
-.horizontal-slider__title-box--long {
+.horizontal-slider__title-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.horizontal-slider__title-box--long::before {
   background: url(../img/longboard.jpeg) center center/cover no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
-.horizontal-slider__title-box--short {
+.horizontal-slider__title-box--short::before {
   background: url(../img/shortboard.jpeg) center center/cover no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
-.horizontal-slider__title-box--soft {
+.horizontal-slider__title-box--soft::before {
   background: url(../img/softboard.jpeg) center center/cover no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .horizontal-slider__title {
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.625rem;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  position: absolute;
+  left: 50%;
+  bottom: 2.5rem;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: 2;
 }
 
 .horizontal-slider__content-box {
@@ -2197,6 +2249,8 @@ a {
           backdrop-filter: blur(0.3125rem);
   width: 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .horizontal-slider__content {

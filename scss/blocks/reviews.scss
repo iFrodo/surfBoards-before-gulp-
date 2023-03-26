@@ -8,11 +8,7 @@
   justify-content: center;
 }
 .reviews__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.625rem;
-  text-transform: uppercase;
-  color: #292929;
+  color: inherit;
   max-width: 30.8125rem;
   margin-bottom: 2rem;
   @include phones {

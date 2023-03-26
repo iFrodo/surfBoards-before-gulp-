@@ -4,6 +4,29 @@
   display: flex;
   position: relative;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgb(0 0 0 / 20%);
+    z-index: 1;
+  }
+}
+
+.horizontal-slider__main-title {
+  font-weight: 700;
+  font-size: rem(48px);
+  line-height: rem(58px);
+  position: absolute;
+  top: rem(125px);
+  left: rem(84px);
+  text-transform: none;
+
+  z-index: 2;
 }
 
 .horizontal-slider__list {
@@ -12,36 +35,60 @@
   right: 0;
   bottom: 0;
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+
 }
 
 .horizontal-slider__item {
   position: relative;
   display: flex;
 
+  @include phones {
+    &.active {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+    }
+  }
 }
 
 .horizontal-slider__title-box {
   width: rem(100px);
   cursor: pointer;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: rem(120px);
+  position: relative;
+  z-index: 2;
 
-  &--long {
-    background: url(../img/longboard.jpeg) center center / cover no-repeat;
-    // filter: brightness(50%);
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: center;
+  // padding-bottom: rem(120px);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
-  &--short {
+  &--long::before {
+    background: url(../img/longboard.jpeg) center center / cover no-repeat;
+    filter: brightness(50%);
+  }
+
+  &--short::before {
     background: url(../img/shortboard.jpeg) center center / cover no-repeat;
     ;
-    // filter: brightness(50%);
+    filter: brightness(50%);
   }
 
-  &--soft {
+  &--soft::before {
     background: url(../img/softboard.jpeg) center center / cover no-repeat;
-    // filter: brightness(50%);
+    filter: brightness(50%);
   }
 }
 
@@ -49,7 +96,12 @@
   font-weight: 700;
   font-size: rem(48px);
   line-height: rem(58px);
-  transform: rotate(-90deg);
+  position: absolute;
+  left: 50%;
+  bottom: rem(40px);
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  z-index: 2;
   // padding: rem(22px) 0 rem(22px) rem(39px);
 }
 
@@ -58,6 +110,8 @@
   backdrop-filter: blur(rem(5px));
   width: 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -69,7 +123,8 @@
   font-weight: 400;
   font-size: rem(16px);
   line-height: rem(24px);
-  @include tablets{
+
+  @include tablets {
     padding: rem(10px) rem(5px) 0 rem(10px);
   }
 }
