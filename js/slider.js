@@ -3,11 +3,11 @@ const slider = $(".boards__list").bxSlider({
   controls: false,
 });
 
-$(".boards__nav--next").click((e) => {
+$(".boards__nav--next").on('click',(e) => {
   e.preventDefault();
   slider.goToNextSlide();
 });
-$(".boards__nav--prev").click((e) => {
+$(".boards__nav--prev").on('click',(e) => {
   e.preventDefault();
   slider.goToPrevSlide();
 });

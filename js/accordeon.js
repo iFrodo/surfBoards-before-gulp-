@@ -18,7 +18,7 @@ const closeEveryItem = container =>{
   itemContainer.removeClass('active')
   items.height(0)
 }
-$('.team__name').click(e=>{
+$('.team__name').on('click',e=>{
   $this = $(e.currentTarget)
   // $('.team__name').css({'color':'#fff934'})
   const container = $this.closest('.team')

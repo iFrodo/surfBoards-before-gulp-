@@ -24,9 +24,10 @@
   position: absolute;
   top: rem(125px);
   left: rem(84px);
-  text-transform: none;
+  text-transform: uppercase;
 
   z-index: 2;
+
 }
 
 .horizontal-slider__list {
@@ -66,6 +67,9 @@
   // align-items: flex-end;
   // justify-content: center;
   // padding-bottom: rem(120px);
+  @include phones{
+    width: rem(90px);
+  }
   &::before {
     content: '';
     position: absolute;
@@ -103,6 +107,10 @@
   transform-origin: 0 0;
   z-index: 2;
   // padding: rem(22px) 0 rem(22px) rem(39px);
+  @include phones{
+    font-size: rem(40px);
+    line-height: rem(48px);
+  }
 }
 
 .horizontal-slider__content-box {
@@ -124,9 +132,9 @@
   font-size: rem(16px);
   line-height: rem(24px);
 
-  @include tablets {
-    padding: rem(10px) rem(5px) 0 rem(10px);
-  }
+  // @include tablets {
+  //   padding: rem(10px) rem(5px) 0 rem(10px);
+  // }
 }
 
 .fp-watermark {

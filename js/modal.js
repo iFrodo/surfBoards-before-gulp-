@@ -9,7 +9,7 @@ const validateFields = (form, fieldsArray) => {
   return errorFields.length === 0;
 };
 
-$(".form__btn").click((e) => {
+$(".form__btn").on('click',(e) => {
   e.preventDefault();
 
   const form = $(".form");
@@ -54,7 +54,7 @@ $(".form__btn").click((e) => {
   }
 });
 
-$(".btn--close").click((e) => {
+$(".btn--close").on('click',(e) => {
   e.preventDefault();
   $.fancybox.close()
   // $(".form-modal").css({ height: "0%", width: "0%" });

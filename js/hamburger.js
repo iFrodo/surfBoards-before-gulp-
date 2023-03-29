@@ -23,8 +23,8 @@ let slide = document.querySelector(".boards");
 //     hamburgerButton.classList.contains("burger--active") == true &&
 //     hamburgerMenu.classList.contains("burger--active") == true
 //   ) {
-//     hamburgerButton.classList.remove == "burger--active";
-//     hamburgerMenu.classList.remove == "menu--active";
+//     hamburgerButton.classList. ove == "burger--active";
+//     hamburgerMenu.classList. ove == "menu--active";
 //   } else if (
 //     hamburgerButton.classList.contains("burger--active") != true &&
 //     hamburgerMenu.classList.contains("burger--active") != true

@@ -3,11 +3,13 @@
   display: block;
   width: rem(660px);
   height: rem(409px);
-    @include tablets{
+
+  @include tablets {
     width: rem(594px);
     height: rem(351px);
   }
-  @include phones{
+
+  @include phones {
     width: rem(394px);
     height: rem(233px);
   }
@@ -20,7 +22,8 @@
   display: block;
   position: relative;
 }
-.player__elem{
+
+.player__elem {
   width: 100%;
   height: 100%;
 }
@@ -35,8 +38,13 @@
   text-align: unset;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.875rem;
+  margin-bottom: rem(10px);
   color: inherit;
+
+  @include tablets {
+    margin-bottom: rem(29px);
+  }
+
 }
 
 .player__splash {
@@ -84,7 +92,7 @@
 }
 
 .player__playback {
-  flex:1;
+  flex: 1;
   margin: 0 rem(20px);
   height: rem(4px);
   cursor: pointer;

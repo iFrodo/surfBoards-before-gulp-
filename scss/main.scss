@@ -1,32 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
+@import "./layout/*.scss";
+@import "./blocks/*.scss";
 
-
-@import "./layout/normalize";
-@import "./layout/media";
-@import "./layout/layout";
-@import "./blocks/section-main-title";
-@import "./blocks/header";
-@import "./blocks/info-block";
-@import "./blocks/why";
-@import "./blocks/boards";
-@import "./blocks/team";
-@import "./blocks/reviews";
-@import "./blocks/form";
-@import "./blocks/radio-btn";
-@import "./blocks/btn";
-@import "./blocks/modal";
-@import "./blocks/features";
-@import "./blocks/boards-nav";
-@import "./blocks/work";
-@import "./blocks/footer";
-@import "./blocks/navigation";
-@import "./blocks/burger";
-@import "./blocks/social";
-@import "./blocks/contacts";
-@import "./blocks/menu";
-@import "./blocks/logo";
-@import "./blocks/form-modal";
-@import "./blocks/horizontal-slider";
-@import "./blocks/fixed-menu";

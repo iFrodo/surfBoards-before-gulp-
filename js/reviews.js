@@ -3,7 +3,7 @@ const findBlockByAlias = alias =>{
     return $(item).attr('data-linked-with') === alias
   })
 }
-$('.reviews__link').click(e=>{
+$('.reviews__link').on('click',e=>{
   e.preventDefault()
 
   const $this = $(e.currentTarget)

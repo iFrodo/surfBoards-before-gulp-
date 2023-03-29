@@ -16,7 +16,7 @@ let mesure = (content, item) => {
     });
   }
   return content.animate({
-    width: "524px",
+    width: "520px",
   });
 };
 $(function () {
@@ -64,7 +64,7 @@ $(function () {
     let $this = $(e.target);
     if (!$this.closest(".horizontal-slider__list").length) {
       $(".horizontal-slider__content-box").animate({
-        width: "0px",
+        width: " ",
       });
       $(".horizontal-slider__item").removeClass("active");
     }
